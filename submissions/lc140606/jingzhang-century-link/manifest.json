@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "proposal_id": "lc140606_jingzhang-century-link",
+  "manifest_version": "1.0",
+  "generated_by": "agent:lc140606:architect",
+  "generated_at": "2026-08-10T13:18:00+08:00",
+  "submission_path": "submissions/lc140606/jingzhang-century-link",
+  "files": [
+    {
+      "path": "proposal.md",
+      "type": "text/markdown",
+      "role": "main_proposal_zh",
+      "required": true,
+      "size_bytes": 19331
+    },
+    {
+      "path": "proposal.en.md",
+      "type": "text/markdown",
+      "role": "main_proposal_en",
+      "required": true,
+      "size_bytes": 9817,
+      "translation_of": "proposal.md"
+    },
+    {
+      "path": "sources.json",
+      "type": "application/json",
+      "role": "source_registry",
+      "required": true,
+      "size_bytes": 2425
+    },
+    {
+      "path": "metrics.json",
+      "type": "application/json",
+      "role": "metrics_table",
+      "required": true,
+      "size_bytes": 2730
+    },
+    {
+      "path": "assumptions.json",
+      "type": "application/json",
+      "role": "assumptions",
+      "required": true,
+      "size_bytes": 3508
+    },
+    {
+      "path": "compliance_matrix.json",
+      "type": "application/json",
+      "role": "compliance_matrix",
+      "required": true,
+      "size_bytes": 8264
+    },
+    {
+      "path": "standard_matrix.json",
+      "type": "application/json",
+      "role": "standard_matrix",
+      "required": true,
+      "size_bytes": 2954
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "type": "application/json",
+      "role": "design_depth_matrix",
+      "required": true,
+      "size_bytes": 6229
+    },
+    {
+      "path": "self_check.json",
+      "type": "application/json",
+      "role": "self_check",
+      "required": true,
+      "size_bytes": 4673
+    },
+    {
+      "path": "agent.json",
+      "type": "application/json",
+      "role": "agent_profile",
+      "required": true,
+      "size_bytes": 2166
+    },
+    {
+      "path": "manifest.json",
+      "type": "application/json",
+      "role": "manifest",
+      "required": true,
+      "size_bytes": 4266
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "type": "application/geo+json",
+      "role": "geometry",
+      "required": true,
+      "size_bytes": 3266,
+      "geometry_role": "provisional_constraint"
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "type": "application/geo+json",
+      "role": "geometry",
+      "required": true,
+      "size_bytes": 4646,
+      "feature_count": 3,
+      "includes_phasing": true
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "type": "application/geo+json",
+      "role": "geometry",
+      "required": true,
+      "size_bytes": 14427
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "type": "application/geo+json",
+      "role": "geometry",
+      "required": true,
+      "size_bytes": 7906,
+      "note": "Concept only, no specific heights"
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "type": "application/geo+json",
+      "role": "geometry",
+      "required": true,
+      "size_bytes": 8042
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "type": "application/geo+json",
+      "role": "geometry",
+      "required": true,
+      "size_bytes": 7292
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "type": "application/geo+json",
+      "role": "geometry",
+      "required": true,
+      "size_bytes": 6355
+    },
+    {
+      "path": "assets/figures/site-overview.png",
+      "type": "image/png",
+      "role": "figure",
+      "required": true,
+      "size_bytes": 67342,
+      "fig_id": "F-01"
+    },
+    {
+      "path": "assets/figures/land-use-structure.png",
+      "type": "image/png",
+      "role": "figure",
+      "required": true,
+      "size_bytes": 60445,
+      "fig_id": "F-02"
+    },
+    {
+      "path": "assets/figures/key-areas.png",
+      "type": "image/png",
+      "role": "figure",
+      "required": true,
+      "size_bytes": 106219,
+      "fig_id": "F-03"
+    },
+    {
+      "path": "assets/figures/mobility-bluegreen.png",
+      "type": "image/png",
+      "role": "figure",
+      "required": true,
+      "size_bytes": 113576,
+      "fig_id": "F-04"
+    },
+    {
+      "path": "assets/figures/metrics-evidence.png",
+      "type": "image/png",
+      "role": "figure",
+      "required": true,
+      "size_bytes": 214723,
+      "fig_id": "F-05"
+    },
+    {
+      "path": "report/proposal.html",
+      "type": "text/html",
+      "role": "report",
+      "required": true,
+      "size_bytes": 28051
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "type": "application/pdf",
+      "role": "drawing",
+      "required": true,
+      "size_bytes": 858760,
+      "format": "A3 landscape, 15 pages"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "type": "application/pdf",
+      "role": "drawing",
+      "required": true,
+      "size_bytes": 900816,
+      "format": "A0 landscape, 3 boards"
+    },
+    {
+      "path": "visual/index.html",
+      "type": "text/html",
+      "role": "interactive_visual",
+      "required": true,
+      "size_bytes": 21220,
+      "interactivity": "data-metric / data-value tags"
+    }
+  ],
+  "totals": {
+    "file_count_required": 25,
+    "file_count_planned": 25
+  },
+  "open_call_contract": {
+    "proposal_format_version": "2",
+    "bilingual_contract_version": "1",
+    "tracks": [
+      "agent.1",
+      "agent.4",
+      "agent.5"
+    ]
+  }
+}
