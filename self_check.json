@@ -84,7 +84,7 @@
       "check_id": "S-13",
       "check_name": "不出现其他提交者品牌",
       "result": "pass",
-      "detail": "未在 proposal.md / proposal.en.md / HTML / PDF 中出现其他个人或机构品牌；（独立提交）仅以'协作单位'身份标注。"
+      "detail": "未在 proposal.md / proposal.en.md / HTML / PDF 中出现其他个人或机构品牌；以个人名义独立提交。"
     },
     {
       "check_id": "S-14",
