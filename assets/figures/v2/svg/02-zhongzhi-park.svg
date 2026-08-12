@@ -25,7 +25,7 @@
   <text x="60" y="50" fill="#f5e9c8" font-size="26" font-weight="700" letter-spacing="3">节点设计 · 众智园</text>
   <text x="60" y="78" fill="#c8bfa8" font-size="13" letter-spacing="2">ZHONGZHI PARK  ·  PUBLIC SPACE &amp; LANDMARK</text>
   <text x="1540" y="50" fill="#f5e9c8" font-size="13" text-anchor="end" letter-spacing="2">SHEET 02 / 04</text>
-  <text x="1540" y="78" fill="#c8bfa8" font-size="11" text-anchor="end">F · T · A  /  URBANISM PRACTICE</text>
+  <text x="1540" y="78" fill="#c8bfa8" font-size="11" text-anchor="end">lc140606  /  INDEPENDENT</text>
 
   <!-- 总平面图（左 60%） -->
   <g transform="translate(40,120)">
@@ -193,5 +193,5 @@
     </g>
   </g>
 
-  <text x="800" y="990" font-size="9" fill="#9c8a6a" text-anchor="middle" letter-spacing="1">© 2026  FTA GROUP  /  URBANISM PRACTICE  /  CENTENNIAL JINGZHANG AI INNOVATION BELT</text>
+  <text x="800" y="990" font-size="9" fill="#9c8a6a" text-anchor="middle" letter-spacing="1">© 2026  lc140606  /  JINGZHANG CENTURY LINK  ·  INDEPENDENT SUBMISSION</text>
 </svg>
