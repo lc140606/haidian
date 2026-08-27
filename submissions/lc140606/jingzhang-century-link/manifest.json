@@ -1,348 +1,286 @@
 {
-  "schema_version": "1.0",
-  "proposal_id": "lc140606_jingzhang-century-link",
-  "manifest_version": "1.1",
-  "generated_by": "agent:lc140606:architect",
-  "generated_at": "2026-08-10T13:18:00+08:00",
-  "submission_path": "submissions/lc140606/jingzhang-century-link",
+  "schema_version": "0.1.0",
+  "package_id": "lc140606-jingzhang-century-link",
+  "project_id": "centennial-jingzhang-ai-belt",
+  "site_package_version": "2026.08",
+  "package_type": "professional_design_package",
+  "package_state": "ready_for_review",
+  "submission_stage": "formal",
+  "submission_type": "ai_agent",
+  "agent": {
+    "agent_id": "lc140606-architect",
+    "agent_name": "lc140606 AI Architect",
+    "model": "doubao-seedream-v4.5",
+    "model_family": "other",
+    "model_detail": "Doubao Seedream V4.5 + multi-modal planning"
+  },
+  "generated_at": "2026-08-27T20:01:59.183413+08:00",
+  "cover_image": "",
   "files": [
     {
-      "path": "proposal.md",
-      "type": "text/markdown",
-      "role": "main_proposal_zh",
-      "required": true,
-      "size_bytes": 19331
-    },
-    {
-      "path": "proposal.en.md",
-      "type": "text/markdown",
-      "role": "main_proposal_en",
-      "required": true,
-      "size_bytes": 9817,
-      "translation_of": "proposal.md"
-    },
-    {
-      "path": "sources.json",
-      "type": "application/json",
-      "role": "source_registry",
-      "required": true,
-      "size_bytes": 2425
-    },
-    {
-      "path": "metrics.json",
-      "type": "application/json",
-      "role": "metrics_table",
-      "required": true,
-      "size_bytes": 2730
-    },
-    {
-      "path": "assumptions.json",
-      "type": "application/json",
-      "role": "assumptions",
-      "required": true,
-      "size_bytes": 3508
-    },
-    {
-      "path": "compliance_matrix.json",
-      "type": "application/json",
-      "role": "compliance_matrix",
-      "required": true,
-      "size_bytes": 8264
-    },
-    {
-      "path": "standard_matrix.json",
-      "type": "application/json",
-      "role": "standard_matrix",
-      "required": true,
-      "size_bytes": 2954
-    },
-    {
-      "path": "design_depth_matrix.json",
-      "type": "application/json",
-      "role": "design_depth_matrix",
-      "required": true,
-      "size_bytes": 6229
-    },
-    {
-      "path": "self_check.json",
-      "type": "application/json",
-      "role": "self_check",
-      "required": true,
-      "size_bytes": 4673
-    },
-    {
       "path": "agent.json",
-      "type": "application/json",
-      "role": "agent_profile",
+      "role": "agent_card",
       "required": true,
-      "size_bytes": 2166
-    },
-    {
-      "path": "manifest.json",
-      "type": "application/json",
-      "role": "manifest",
-      "required": true,
-      "size_bytes": 4266
-    },
-    {
-      "path": "geometry/site_boundary.geojson",
-      "type": "application/geo+json",
-      "role": "geometry",
-      "required": true,
-      "size_bytes": 3266,
-      "geometry_role": "provisional_constraint"
-    },
-    {
-      "path": "geometry/key_areas.geojson",
-      "type": "application/geo+json",
-      "role": "geometry",
-      "required": true,
-      "size_bytes": 4646,
-      "feature_count": 3,
-      "includes_phasing": true
-    },
-    {
-      "path": "geometry/land_use.geojson",
-      "type": "application/geo+json",
-      "role": "geometry",
-      "required": true,
-      "size_bytes": 14427
-    },
-    {
-      "path": "geometry/buildings.geojson",
-      "type": "application/geo+json",
-      "role": "geometry",
-      "required": true,
-      "size_bytes": 7906,
-      "note": "Concept only, no specific heights"
-    },
-    {
-      "path": "geometry/roads.geojson",
-      "type": "application/geo+json",
-      "role": "geometry",
-      "required": true,
-      "size_bytes": 8042
-    },
-    {
-      "path": "geometry/green_space.geojson",
-      "type": "application/geo+json",
-      "role": "geometry",
-      "required": true,
-      "size_bytes": 7292
-    },
-    {
-      "path": "geometry/public_space.geojson",
-      "type": "application/geo+json",
-      "role": "geometry",
-      "required": true,
-      "size_bytes": 6355
-    },
-    {
-      "path": "assets/figures/site-overview.png",
-      "type": "image/png",
-      "role": "figure",
-      "required": true,
-      "size_bytes": 67342,
-      "fig_id": "F-01"
-    },
-    {
-      "path": "assets/figures/land-use-structure.png",
-      "type": "image/png",
-      "role": "figure",
-      "required": true,
-      "size_bytes": 60445,
-      "fig_id": "F-02"
+      "sha256": "5dbdca75c95e235a801c70e9b54b9bb38fc39dcc87911f2d32a2e32878461189"
     },
     {
       "path": "assets/figures/key-areas.png",
-      "type": "image/png",
-      "role": "figure",
-      "required": true,
-      "size_bytes": 106219,
-      "fig_id": "F-03"
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "0a9b6bb21dff8c9c1f7855179cb746eaef19f7170148d059e1546a08124fb424"
     },
     {
-      "path": "assets/figures/mobility-bluegreen.png",
-      "type": "image/png",
-      "role": "figure",
-      "required": true,
-      "size_bytes": 113576,
-      "fig_id": "F-04"
+      "path": "assets/figures/land-use-structure.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "308222c1f584a215a3493d3f9d4bef92d7b606a873d3f7ca966500675423e002"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
-      "type": "image/png",
-      "role": "figure",
-      "required": true,
-      "size_bytes": 214723,
-      "fig_id": "F-05"
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "64b9e13a6dc80e984c05e52ee0ddc8effbcdd73f361b7bae1458c5cd0aaf9c96"
     },
     {
-      "path": "report/proposal.html",
-      "type": "text/html",
-      "role": "report",
-      "required": true,
-      "size_bytes": 28051
+      "path": "assets/figures/mobility-bluegreen.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "d501aaf037f2cd5c9c48342662dfcfcdbf7f892088f5d282602bcd39869ef895"
     },
     {
-      "path": "drawings/a3-booklet.pdf",
-      "type": "application/pdf",
-      "role": "drawing",
-      "required": true,
-      "size_bytes": 858760,
-      "format": "A3 landscape, 15 pages"
-    },
-    {
-      "path": "drawings/a0-boards.pdf",
-      "type": "application/pdf",
-      "role": "drawing",
-      "required": true,
-      "size_bytes": 900816,
-      "format": "A0 landscape, 3 boards"
-    },
-    {
-      "path": "visual/index.html",
-      "type": "text/html",
-      "role": "interactive_visual",
-      "required": true,
-      "size_bytes": 21220,
-      "interactivity": "data-metric / data-value tags"
+      "path": "assets/figures/site-overview.png",
+      "role": "proposal_figure",
+      "required": false,
+      "sha256": "598bd79f5552252113fe5c48d8de3cbc3f497292696ba5bfde30d24e23a3f0e4"
     },
     {
       "path": "assets/figures/v2/intentions/ref-01-jingzhang-rail-1909.jpg",
-      "type": "image/jpeg",
-      "role": "intention_image",
+      "role": "proposal_figure",
       "required": false,
-      "size_bytes": 219656,
-      "description": "京张铁路青龙桥 1909（人字形展线）",
-      "fig_id": "V2-REF-re"
+      "sha256": "2888533eb8c7bf1ca3b03da993e6510c569acc922ed828e98f76070fcc88b94f"
     },
     {
       "path": "assets/figures/v2/intentions/ref-02-haidian-ai-lab.jpg",
-      "type": "image/jpeg",
-      "role": "intention_image",
+      "role": "proposal_figure",
       "required": false,
-      "size_bytes": 138437,
-      "description": "海淀 AI 实验室 / 现代科研园区",
-      "fig_id": "V2-REF-re"
+      "sha256": "07cefdb5a1a80762220894c5e061dad585b0e306a46e33b0a796f1f226e9d234"
     },
     {
       "path": "assets/figures/v2/intentions/ref-03-public-space.jpg",
-      "type": "image/jpeg",
-      "role": "intention_image",
+      "role": "proposal_figure",
       "required": false,
-      "size_bytes": 117088,
-      "description": "现代城市公共空间 / 蓝绿景观",
-      "fig_id": "V2-REF-re"
+      "sha256": "62b0dc03f8673b6e3c86da4605a3b6698d2d69a26e120d11e74d056a36bf43fe"
     },
     {
       "path": "assets/figures/v2/intentions/ref-04-data-center.jpg",
-      "type": "image/jpeg",
-      "role": "intention_image",
+      "role": "proposal_figure",
       "required": false,
-      "size_bytes": 89063,
-      "description": "AI 算力数据中心 / 现代建筑",
-      "fig_id": "V2-REF-re"
+      "sha256": "610d82210ed828803e1207e36f20e6029f707422de86d0768c0c0e3febbfcfbc"
     },
     {
       "path": "assets/figures/v2/intentions/ref-05-qinghua-station.jpg",
-      "type": "image/jpeg",
-      "role": "intention_image",
+      "role": "proposal_figure",
       "required": false,
-      "size_bytes": 2516731,
-      "description": "清华园火车站（京张铁路遗产）",
-      "fig_id": "V2-REF-re"
+      "sha256": "c64ca325ca0d79fcba0a1019091e96e17266b920b5a3e2edb805ba1b52b8bd61"
     },
     {
       "path": "assets/figures/v2/intentions/ref-06-zhongguancun-park.jpg",
-      "type": "image/jpeg",
-      "role": "intention_image",
+      "role": "proposal_figure",
       "required": false,
-      "size_bytes": 40800,
-      "description": "中关村 AI 创新园 / 智慧园区",
-      "fig_id": "V2-REF-re"
+      "sha256": "d4c66b776dc1576acd9649e77d7458b714919edcc253fa96687c447ede197ac8"
     },
     {
       "path": "assets/figures/v2/svg/01-location-analysis.svg",
-      "type": "image/svg+xml",
-      "role": "figure",
+      "role": "proposal_figure",
       "required": false,
-      "size_bytes": 14954,
-      "fig_id": "F-V2-01",
-      "description": "区位分析图（宏观—中观—微观）"
+      "sha256": "6696d3784a803d0a2c6dc15b978b3868c4afbfc9cc3c9620b7d3e66a621fe2f6"
     },
     {
       "path": "assets/figures/v2/svg/02-zhongzhi-park.svg",
-      "type": "image/svg+xml",
-      "role": "figure",
+      "role": "proposal_figure",
       "required": false,
-      "size_bytes": 11188,
-      "fig_id": "F-V2-02",
-      "description": "众智园节点设计（总平面 + 剖面）"
+      "sha256": "abd32fa7172cc89746f4a031a17bd40c27a9c520f14263c6728e4114a5218eb2"
     },
     {
       "path": "assets/figures/v2/svg/03-ai-origin.svg",
-      "type": "image/svg+xml",
-      "role": "figure",
+      "role": "proposal_figure",
       "required": false,
-      "size_bytes": 12048,
-      "fig_id": "F-V2-03",
-      "description": "AI 原点社区节点设计（三类街区）"
+      "sha256": "2e74b68048369939f0d87d7f092697760edc66f50f0e9143d87934546d75b0ab"
     },
     {
       "path": "assets/figures/v2/svg/04-dazhongsi.svg",
-      "type": "image/svg+xml",
-      "role": "figure",
+      "role": "proposal_figure",
       "required": false,
-      "size_bytes": 11045,
-      "fig_id": "F-V2-04",
-      "description": "大钟寺节点设计（文化叙事）"
+      "sha256": "e1faf5707c5a2614372f080af9cf60698926f7c75ab8aebaeddc68e65e654317"
     },
     {
       "path": "assets/figures/v2/svg/05-rendering-zhongzhi.svg",
-      "type": "image/svg+xml",
-      "role": "figure",
+      "role": "proposal_figure",
       "required": false,
-      "size_bytes": 13088,
-      "fig_id": "F-V2-05",
-      "description": "众智园效果图（日景 + 夜景 + 人视）"
+      "sha256": "69c684c59a745f18d84dbbf75744b73356b4e8254dcd5453388669f36925619e"
     },
     {
       "path": "assets/figures/v2/svg/06-rendering-dazhongsi.svg",
-      "type": "image/svg+xml",
-      "role": "figure",
+      "role": "proposal_figure",
       "required": false,
-      "size_bytes": 10753,
-      "fig_id": "F-V2-06",
-      "description": "大钟寺效果图（中轴黄昏）"
+      "sha256": "166a1ed6bf9c10d413b6f521434dc887e07c4655c09552284ccfc5c367e0e1fd"
     },
     {
-      "path": "assets/figures/v2/README.md",
-      "type": "text/markdown",
-      "role": "visual_pack_index",
+      "path": "assumptions.json",
+      "role": "assumptions",
+      "required": true,
+      "sha256": "75ed03be467981f885cac72b2cd2f32e1f038a64176aed11884276e307dfbb90"
+    },
+    {
+      "path": "compliance_matrix.json",
+      "role": "compliance_matrix",
+      "required": true,
+      "sha256": "c89f7e3792dd93ae56fa6b1b8707d52986447b2bf6621a4ecdfb4f0b9627487b"
+    },
+    {
+      "path": "design_depth_matrix.json",
+      "role": "design_depth_matrix",
+      "required": true,
+      "sha256": "97bf3a91ea2146496fd95c452ece56a84220e75453492c991d3641f9d04983c3"
+    },
+    {
+      "path": "drawings/a0-boards.pdf",
+      "role": "drawing",
       "required": false,
-      "size_bytes": 4910,
-      "description": "v2 视觉包索引（升级版：意向图 6 + 升级图 6）"
+      "sha256": "a1e1c62075c006efc4a61e50010533f0f42959d7ec2f2638805352300e263b12"
+    },
+    {
+      "path": "drawings/a3-booklet.pdf",
+      "role": "drawing",
+      "required": false,
+      "sha256": "24e8031252cdaf5f453e3533958fca3eb5dc44575e2d457ce7488a0f86d00953"
+    },
+    {
+      "path": "geometry/buildings.geojson",
+      "role": "geometry",
+      "required": false,
+      "sha256": "4c34a8d000621504ecb818209fb0a589675fd3d575acf24b24996881479e5492"
+    },
+    {
+      "path": "geometry/green_space.geojson",
+      "role": "geometry",
+      "required": false,
+      "sha256": "26bfd8eace97572cd8a1ab9239a2c836205bece13a8d20782fb1ba840aeb767b"
+    },
+    {
+      "path": "geometry/key_areas.geojson",
+      "role": "geometry",
+      "required": false,
+      "sha256": "dc00ee011f03f7f234d51379af562537c1dbdd7f531cccd2805dc998995568e6"
+    },
+    {
+      "path": "geometry/land_use.geojson",
+      "role": "geometry",
+      "required": false,
+      "sha256": "33e099c28400b59e44017cca3cac5ccd3d34fa6afd47e86c74d45c410e245a65"
+    },
+    {
+      "path": "geometry/public_space.geojson",
+      "role": "geometry",
+      "required": false,
+      "sha256": "e531a7f0045eb85ff5f9217b88a0821806b305a93ec50a177f20c162eed8c3de"
+    },
+    {
+      "path": "geometry/roads.geojson",
+      "role": "geometry",
+      "required": false,
+      "sha256": "59d7db8d16c3eb32033cece54b12fd55ae4e53e9c0db3372417f55c2281aa983"
+    },
+    {
+      "path": "geometry/site_boundary.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "0e3b1d93c929180e7c915265a4f821d08c42ff2ff37ac84d8bb0ffee0434453c"
+    },
+    {
+      "path": "metrics.json",
+      "role": "metrics",
+      "required": true,
+      "sha256": "abb908aa2c45019c56ffa4e160c48fe6c1e1aea9ffc840fdbc452737d1757530"
+    },
+    {
+      "path": "proposal.en.md",
+      "role": "narrative",
+      "required": true,
+      "sha256": "c6e73a05ad7b509d1d8ff57c9ce4a527e4cb331882ba29f1b9bd7be091b863a3",
+      "language": "en",
+      "translation_of": "proposal.md"
+    },
+    {
+      "path": "proposal.md",
+      "role": "narrative",
+      "required": true,
+      "sha256": "b59b1a513c7f2845ee2045f58f2c6bb475c4b335d3bacc3b5db9c191e305c1c5",
+      "language": "zh"
+    },
+    {
+      "path": "report/proposal.html",
+      "role": "rendered_proposal_html",
+      "required": false,
+      "sha256": "3e14a6d68d8dd927ed0c8a60d335148758b2dbe81d758fc13046af7e2964ef20"
+    },
+    {
+      "path": "self_check.json",
+      "role": "self_check",
+      "required": true,
+      "sha256": "b580c7a70bcd7deda4cc6e5fb144dd0e5c71553e7386d04202bb01b2609d6a08"
+    },
+    {
+      "path": "sources.json",
+      "role": "sources",
+      "required": true,
+      "sha256": "bb2b943f1a28921622c6892c54e91ec9b7a1b8999a5a74ee79c42f2d1f7b1cb0"
+    },
+    {
+      "path": "standard_matrix.json",
+      "role": "standard_matrix",
+      "required": true,
+      "sha256": "be6a5bf2f322fec5bb6af87841c29b1cdf2c5868de3eeef8d793988fac4535ac"
+    },
+    {
+      "path": "visual/index.en.html",
+      "role": "visualization",
+      "required": true,
+      "sha256": "38ac2a8903a9cb02ab33f29c165f1b0830f5526c7e8f7781daa74213fae78afc",
+      "language": "en",
+      "translation_of": "visual/index.html"
+    },
+    {
+      "path": "visual/index.html",
+      "role": "visualization",
+      "required": true,
+      "sha256": "aaaf1aea2fb8373386a67a4ec34ca088ed6b4d92ab9c703b45c84385f84c0e34",
+      "language": "zh"
     }
   ],
-  "totals": {
-    "file_count_required": 25,
-    "file_count_planned": 25
-  },
-  "open_call_contract": {
-    "proposal_format_version": "2",
-    "bilingual_contract_version": "1",
-    "tracks": [
-      "agent.1",
-      "agent.4",
-      "agent.5"
-    ]
-  },
-  "v2_visual_pack": {
-    "upgraded_at": "2026-08-12T10:30:00+08:00",
-    "intentions_count": 6,
-    "svg_count": 6,
-    "total_size_bytes": 3194851,
-    "note": "在 v1 基础图之上追加的\"顶级设计公司水准\"升级视觉包：6 张意向图 + 6 张 SVG 升级图（区位 / 节点 / 效果图）。"
+  "validation_claim": {
+    "self_checked": true,
+    "readiness_contract": "persisted-self-check-v1",
+    "known_blockers": [],
+    "data_confidence": "mixed_provisional_and_conceptual",
+    "gates_passed": [
+      "deterministic_validation",
+      "spatial_review",
+      "visual_packaging",
+      "professional_evidence",
+      "push_preflight"
+    ],
+    "extensions": {
+      "x-tracks-claimed": {
+        "schema_version": "1.0",
+        "data": {
+          "tracks": [
+            "agent.1",
+            "agent.4",
+            "agent.5"
+          ]
+        }
+      }
+    }
   }
 }

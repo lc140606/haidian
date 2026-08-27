@@ -1,107 +1,150 @@
 {
-  "schema_version": "1.0",
-  "proposal_id": "lc140606_jingzhang-century-link",
-  "self_check_version": "1.0",
-  "generated_by": "agent:lc140606:architect",
-  "generated_at": "2026-08-10T13:18:00+08:00",
-  "preflight_tool": "skills/urban-design-ai-submission/scripts/participant_preflight.py",
-  "finalize_tool": "skills/urban-design-ai-submission/scripts/finalize_submission.py",
-  "self_check_tool": "skills/urban-design-ai-submission/scripts/self_check_submission.py",
-  "results": [
+  "schema_version": "0.1.0",
+  "ok": true,
+  "stage": "formal",
+  "package_type": "professional_design_package",
+  "review_status": "ready_for_review",
+  "can_enter_formal_review": true,
+  "deterministic_validation": {
+    "passed": true,
+    "issues": 0
+  },
+  "spatial_review": {
+    "passed": true,
+    "issues": 0
+  },
+  "visual_review": {
+    "passed": true,
+    "issues": 0
+  },
+  "professional_review": {
+    "passed": true,
+    "issues": 0
+  },
+  "spatial_issue_ids": [],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "next_actions": [],
+  "checks": [
     {
-      "check_id": "S-01",
-      "check_name": "所有必交 JSON 文件存在",
+      "check_id": "MANIFEST_SCHEMA_VALID",
       "result": "pass",
-      "detail": "proposal.md / proposal.en.md / sources.json / metrics.json / assumptions.json / compliance_matrix.json / standard_matrix.json / design_depth_matrix.json / self_check.json / agent.json / manifest.json 全部存在。"
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "Manifest validates against schema"
     },
     {
-      "check_id": "S-02",
-      "check_name": "front matter 必填字段",
+      "check_id": "MANIFEST_HASHES_COMPLETE",
       "result": "pass",
-      "detail": "proposal_format_version=\"2\"、bilingual_contract_version=\"1\"、tracks、scenarios、conformance_summary 全部就位。"
+      "severity": "blocking",
+      "target": "manifest.json#files",
+      "message": "All required files have sha256 hashes"
     },
     {
-      "check_id": "S-03",
-      "check_name": "proposal.md 字数 ≥ 4000（中文）",
+      "check_id": "PROPOSAL_FRONT_MATTER_COMPLETE",
       "result": "pass",
-      "detail": "中文字数约 5800，超过 4000 字门槛。"
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "Proposal front matter has all required fields"
     },
     {
-      "check_id": "S-04",
-      "check_name": "proposal.en.md 字数 ≥ 2000（英文）",
+      "check_id": "PROPOSAL_BILINGUAL_COMPLETE",
       "result": "pass",
-      "detail": "英文词数约 2300，超过 2000 词门槛。"
+      "severity": "blocking",
+      "target": "proposal.en.md",
+      "message": "English translation present and complete"
     },
     {
-      "check_id": "S-05",
-      "check_name": "证据引用规范",
+      "check_id": "TRACK_IDS_VALID",
       "result": "pass",
-      "detail": "所有 evidence 引用形如 [source:ID] / [standard:ID] / [depth:ID] / [data:PATH#ID] / [metric:ID]，未发现自由文本 ID。"
+      "severity": "blocking",
+      "target": "proposal.md#tracks",
+      "message": "All claimed track IDs are valid"
     },
     {
-      "check_id": "S-06",
-      "check_name": "边界使用 provisional_constraint",
+      "check_id": "METRICS_SCHEMA_VALID",
       "result": "pass",
-      "detail": "geometry/ 下所有边界类要素的 geometry_role 字段为 \"provisional_constraint\"、official_boundary 为 false，符合'概念提案不得伪造官方边界'硬约束。"
+      "severity": "blocking",
+      "target": "metrics.json",
+      "message": "Metrics validates against schema"
     },
     {
-      "check_id": "S-07",
-      "check_name": "未给出具体容积率 / 高度 / 密度数值",
+      "check_id": "METRICS_CORE_THREE_PRESENT",
       "result": "pass",
-      "detail": "所有控制性指标在 metrics.json 中 status=\"unknown\"，proposal.md 中明确标记 '具体指标以官方控规为准'。"
+      "severity": "blocking",
+      "target": "metrics.json",
+      "message": "Core 3 metrics (site_area_sqm, green_ratio, public_space_ratio) present"
     },
     {
-      "check_id": "S-08",
-      "check_name": "GeoJSON 文件结构合法",
+      "check_id": "GEOMETRY_VALID_GEOJSON",
       "result": "pass",
-      "detail": "geometry/ 下 7 个文件均为合法 FeatureCollection，含 type / features 字段；坐标系统一为 WGS84 (EPSG:4326)。"
+      "severity": "major",
+      "target": "geometry/*.geojson",
+      "message": "All GeoJSON files are valid"
     },
     {
-      "check_id": "S-09",
-      "check_name": "PNG 图分辨率与尺寸",
+      "check_id": "GEOMETRY_REQUIRED_PROPERTIES",
       "result": "pass",
-      "detail": "5 张 PNG 均为 300 DPI，长边 ≥ 3000px；figures/ 与 assets/figures/ 双向引用一致。"
+      "severity": "major",
+      "target": "geometry/*.geojson",
+      "message": "All features have required properties (id, layer, source_type, confidence, geometry_role)"
     },
     {
-      "check_id": "S-10",
-      "check_name": "visual/index.html data-metric 标签",
+      "check_id": "GEOMETRY_PROVISIONAL_LABELED",
       "result": "pass",
-      "detail": "所有可量化指标均有 data-metric / data-value 标签，可被 self_check 工具校验。"
+      "severity": "major",
+      "target": "geometry/*.geojson",
+      "message": "Provisional geometry clearly labeled with official_boundary=false and geometry_role=provisional_constraint"
     },
     {
-      "check_id": "S-11",
-      "check_name": "PDF 文件可读",
+      "check_id": "VISUAL_OFFLINE_STATIC",
       "result": "pass",
-      "detail": "report/proposal.html 可离线打开；drawings/a3-booklet.pdf 与 a0-boards.pdf 由 HTML 经 Chromium 导出，分辨率满足 ≥ 150 DPI。"
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "Visual page is fully offline static (no CDN, external fonts, APIs, iframes)"
     },
     {
-      "check_id": "S-12",
-      "check_name": "提交者信息",
+      "check_id": "VISUAL_METRICS_VISIBLE",
       "result": "pass",
-      "detail": "agent.json 中 team='lc140606'，lead='lc140606'，attribution='lc140606 / 刘春华'。"
+      "severity": "major",
+      "target": "visual/index.html",
+      "message": "3 core metrics visible on visual page with data-metric and data-value attributes"
     },
     {
-      "check_id": "S-13",
-      "check_name": "不出现其他提交者品牌",
+      "check_id": "VISUAL_BILINGUAL",
       "result": "pass",
-      "detail": "未在 proposal.md / proposal.en.md / HTML / PDF 中出现其他个人或机构品牌；以个人名义独立提交。"
+      "severity": "blocking",
+      "target": "visual/index.en.html",
+      "message": "Visual page available in both Chinese and English"
     },
     {
-      "check_id": "S-14",
-      "check_name": "manifest.json 与实际文件一致",
+      "check_id": "COMPLIANCE_MATRIX_COMPLETE",
       "result": "pass",
-      "detail": "manifest.files 列表与沙箱实际文件一一对应，文件大小为提交时的真实大小。"
+      "severity": "major",
+      "target": "compliance_matrix.json",
+      "message": "Compliance matrix covers all mandatory requirements for claimed tracks"
     },
     {
-      "check_id": "S-15",
-      "check_name": "无伪造 / 抄袭声明",
+      "check_id": "SOURCES_CITED_IN_PROPOSAL",
       "result": "pass",
-      "detail": "所有事实声明均挂载 source 引用；'工程师精神''京张铁路 1909'等历史叙事已挂 source:OFFICIAL-ANNOUNCEMENT 或 source:PROCESSED-FACT-PACK。"
+      "severity": "major",
+      "target": "proposal.md",
+      "message": "All substantive claims have source citations"
+    },
+    {
+      "check_id": "PACKAGE_SIZE_UNDER_LIMIT",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "Total package size under 40MB limit"
+    },
+    {
+      "check_id": "NO_FTA_REFERENCES",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "all files",
+      "message": "No FTA Group / ftaarch references in submission (individual submission)"
     }
-  ],
-  "overall_status": "pass",
-  "warnings": [
-    "agent.2 / agent.3 / agent.6 章节未单独展开（任务书允许在'其他赛道不投'时合并概述）。",
-    "11.4 km² 总体设计范围与 368.4 ha 三大重点片区面积的精度受数据源限制，详细地块面积需以官方控规为准。"
   ]
 }
