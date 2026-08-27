@@ -21,7 +21,7 @@
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "5dbdca75c95e235a801c70e9b54b9bb38fc39dcc87911f2d32a2e32878461189"
+      "sha256": "a3718757228c3538283d5b3aa673f2155224e1e11842306bd31999b74e5d4a11"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -129,13 +129,13 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "75ed03be467981f885cac72b2cd2f32e1f038a64176aed11884276e307dfbb90"
+      "sha256": "82a600786a7e0a6f40e0a38fc8fa12515eaa5cbf54a433fba95ccea6a11bf292"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "c89f7e3792dd93ae56fa6b1b8707d52986447b2bf6621a4ecdfb4f0b9627487b"
+      "sha256": "0087570368aaa8f272bcec9a261ba3cc2b0690d09d0a2d20e8c219a525fc5002"
     },
     {
       "path": "design_depth_matrix.json",
@@ -219,7 +219,7 @@
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "c6e73a05ad7b509d1d8ff57c9ce4a527e4cb331882ba29f1b9bd7be091b863a3",
+      "sha256": "2f08140ececb56816e5052d69fe9ca025f95218a06a7cd6c6554d8e5e4f9cd53",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -227,7 +227,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "18b2547417d708e9315cd454f4fbe9a7563663b6e17030523471ba73b22444ec",
+      "sha256": "25ae46a81d84a90be2372c1e985175df95ff445c039b8ffe1ac99a3a082c58db",
       "language": "zh",
       "translation_file": "proposal.en.md"
     },
@@ -254,7 +254,7 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "bb2b943f1a28921622c6892c54e91ec9b7a1b8999a5a74ee79c42f2d1f7b1cb0"
+      "sha256": "3b7540589b5d43be18b7d738233eb3a77fbe591809cb16150afc5a613503a52b"
     },
     {
       "path": "standard_matrix.json",
@@ -292,5 +292,5 @@
     "known_blockers": [],
     "data_confidence": "mixed_provisional_and_conceptual"
   },
-  "package_size_bytes": 5740628
+  "package_size_bytes": 5740904
 }

@@ -19,7 +19,11 @@
         "metrics_alignment",
         "submission_coordination"
       ],
-      "track_coverage": ["agent.1", "agent.4", "agent.5"]
+      "track_coverage": [
+        "agent.1",
+        "agent.4",
+        "agent.5"
+      ]
     },
     {
       "agent_id": "lc140606:urbanist",
@@ -34,7 +38,9 @@
         "blue_green_network",
         "mobility_pedestrian_priority"
       ],
-      "track_coverage": ["agent.4"]
+      "track_coverage": [
+        "agent.4"
+      ]
     },
     {
       "agent_id": "lc140606:narrator",
@@ -48,7 +54,9 @@
         "site_scenarios",
         "storytelling_visuals"
       ],
-      "track_coverage": ["agent.5"]
+      "track_coverage": [
+        "agent.5"
+      ]
     }
   ],
   "human_collaborators": [

@@ -4,11 +4,10 @@ author_github: "lc140606"
 author_name: "刘春华"
 organization: "（独立提交）"
 language: "zh"
-translation_file: "proposal.en.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗址为文化主轴,提出"一轨三核"的 AI 开源长廊空间结构:京张主脉串联众智园、北京 AI 原点社区与大钟寺三处重点区,北接高校策源,南接产业转化,东连蓝绿智联环。全部空间建议为概念方案,供专业团队深化研究。"
-tracks: ["agent.1", "agent.4", "agent.5"]
-scenarios: ["open-source-release-hall", "intelligent-corridor-bluegreen", "century-jingzhang-pilgrimage"]
+tracks: ["jingzhang-heritage-narrative", "youth-friendly-public-space", "ai-traffic-walkability"]
+scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed"]
 iteration: "v2.0-formal"
 conformance_summary: "方案覆盖 agent.1 总体概念、agent.4 公共空间地标、agent.5 文化叙事三条赛道，所有空间建议为概念方案。"
 proposal_format_version: "2"

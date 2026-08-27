@@ -7,8 +7,8 @@ language: "en"
 translation_of: "proposal.md"
 license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the century-old Jing-Zhang railway as the cultural spine, this proposal presents the 'One-Rail-Three-Cores' AI open corridor: the Jing-Zhang main axis links the three key areas (Zhongzhiyuan AI Acceleration Park, Beijing AI Origin Community, Dazhongsi AI Industry Cluster), connecting university knowledge sources in the north with industry translation in the south, and a blue-green smart ring in the east. All spatial suggestions are conceptual proposals for further study by professional teams."
-tracks: ["agent.1", "agent.4", "agent.5"]
-scenarios: ["open-source-release-hall", "intelligent-corridor-bluegreen", "century-jingzhang-pilgrimage"]
+tracks: ["jingzhang-heritage-narrative", "youth-friendly-public-space", "ai-traffic-walkability"]
+scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed"]
 iteration: "v2.0-formal"
 conformance_summary: "Proposal covers agent.1 overall concept, agent.4 public space landmarks, and agent.5 cultural narrative tracks. All spatial proposals are conceptual."
 proposal_format_version: "2"

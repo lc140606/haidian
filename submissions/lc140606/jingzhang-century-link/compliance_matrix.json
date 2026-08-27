@@ -603,7 +603,7 @@
       "title_zh": "自检脚本通过"
     },
     {
-      "requirement_id": "agent.1",
+      "requirement_id": "jingzhang-heritage-narrative",
       "mandatory": true,
       "report_sections": [
         "ch1_overall_concept"
@@ -708,7 +708,7 @@
       "title_zh": "AI+ 十大场景 / 行业落地"
     },
     {
-      "requirement_id": "agent.4",
+      "requirement_id": "youth-friendly-public-space",
       "mandatory": true,
       "report_sections": [
         "ch4_public_space"
@@ -743,7 +743,7 @@
       "title_zh": "公共空间 + 地标"
     },
     {
-      "requirement_id": "agent.5",
+      "requirement_id": "ai-traffic-walkability",
       "mandatory": true,
       "report_sections": [
         "ch5_cultural_narrative"
