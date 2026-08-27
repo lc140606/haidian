@@ -1,15 +1,14 @@
 {
   "schema_version": "0.1.0",
-  "proposal_id": "lc140606_jingzhang-century-link",
-  "tracks_claimed": [
-    "agent.1",
-    "agent.4",
-    "agent.5"
-  ],
   "requirements": [
     {
       "requirement_id": "REQ-OFFICIAL-ANNOUNCEMENT",
       "mandatory": true,
+      "track_ids": [
+        "jingzhang-heritage-narrative",
+        "youth-friendly-public-space",
+        "ai-traffic-walkability"
+      ],
       "report_sections": [
         "设计依据与资料清单",
         "三层范围工作框架"
@@ -45,6 +44,11 @@
     {
       "requirement_id": "REQ-AGENT-TASKBOOK",
       "mandatory": true,
+      "track_ids": [
+        "jingzhang-heritage-narrative",
+        "youth-friendly-public-space",
+        "ai-traffic-walkability"
+      ],
       "report_sections": [
         "AI 创新生态、人才画像与 AI+ 场景",
         "重点区域详细设计"
@@ -67,7 +71,7 @@
         "AGENT-TASKBOOK"
       ],
       "standard_ids": [
-        "MOHURD-URBAN-DESIGN-MEASURES"
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK"
       ],
       "assumption_ids": [
         "ASSUMP-SCENARIO-CONCEPT"
@@ -77,809 +81,111 @@
       ]
     },
     {
-      "requirement_id": "1.3.1",
+      "requirement_id": "REQ-TRACK-JINGZHANG-HERITAGE",
       "mandatory": true,
+      "track_ids": [
+        "jingzhang-heritage-narrative"
+      ],
       "report_sections": [
-        "ch1_overall_concept"
+        "京张铁路遗产叙事与文化再生"
       ],
       "geojson_layers": [
-        "site_boundary",
-        "land_use"
+        "roads",
+        "key_areas"
       ],
       "metrics": [
-        "site_area_sqm"
+        "heritage_site_count"
       ],
       "drawings": [
-        "a3-booklet.pdf"
+        "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "map",
-        "metrics"
+        "heritage"
       ],
       "source_ids": [
         "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
+        "AGENT-TASKBOOK"
       ],
       "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-OFFICIAL-ANNOUNCEMENT",
+        "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
+        "ASSUMP-BOUNDARY-PROVISIONAL"
       ],
       "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "明确百年京张 AI 创新带的总体定位与战略目标"
+        "SC-PROF-003"
+      ]
     },
     {
-      "requirement_id": "1.3.2",
+      "requirement_id": "REQ-TRACK-YOUTH-FRIENDLY",
       "mandatory": true,
+      "track_ids": [
+        "youth-friendly-public-space"
+      ],
       "report_sections": [
-        "ch1_overall_concept"
+        "青年友好公共空间体系"
       ],
       "geojson_layers": [
-        "site_boundary",
-        "land_use"
+        "public_space",
+        "green_space"
       ],
       "metrics": [
-        "site_area_sqm"
+        "public_space_ratio"
       ],
       "drawings": [
-        "a3-booklet.pdf"
+        "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "map",
-        "metrics"
+        "public-space"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
+        "AGENT-TASKBOOK"
       ],
       "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "MOHURD-URBAN-DESIGN-MEASURES"
       ],
       "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
+        "ASSUMP-BOUNDARY-PROVISIONAL"
       ],
       "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "以 AI 全产业链与创新生态为统领"
+        "SC-SPATIAL-003"
+      ]
     },
     {
-      "requirement_id": "1.3.3",
+      "requirement_id": "REQ-TRACK-AI-TRAFFIC",
       "mandatory": true,
+      "track_ids": [
+        "ai-traffic-walkability"
+      ],
       "report_sections": [
-        "ch2_spatial_structure"
+        "AI 交通步行友好场景"
       ],
       "geojson_layers": [
-        "site_boundary",
-        "land_use"
+        "roads",
+        "public_space"
       ],
       "metrics": [
-        "site_area_sqm"
+        "road_density"
       ],
       "drawings": [
-        "a3-booklet.pdf"
+        "drawings/a0-boards.pdf"
       ],
       "visual_sections": [
-        "map",
-        "metrics"
+        "mobility"
       ],
       "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
+        "AGENT-TASKBOOK"
       ],
       "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+        "PROJECT-AGENT-OPEN-CALL-TASKBOOK"
       ],
       "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
+        "ASSUMP-BOUNDARY-PROVISIONAL"
       ],
       "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "突出创新带的'带状'结构与跨区协同"
-    },
-    {
-      "requirement_id": "1.4.1",
-      "mandatory": true,
-      "report_sections": [
-        "ch4_public_space"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "公共空间体系构建"
-    },
-    {
-      "requirement_id": "1.4.2",
-      "mandatory": true,
-      "report_sections": [
-        "ch4_public_space"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "地标与门户节点设计"
-    },
-    {
-      "requirement_id": "1.4.3",
-      "mandatory": true,
-      "report_sections": [
-        "ch4_public_space"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "蓝绿网络与慢行系统衔接"
-    },
-    {
-      "requirement_id": "1.5.1.1",
-      "mandatory": true,
-      "report_sections": [
-        "ch5_cultural_narrative"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "文化叙事主线"
-    },
-    {
-      "requirement_id": "1.5.1.2",
-      "mandatory": true,
-      "report_sections": [
-        "ch5_cultural_narrative"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "文化节点与场景"
-    },
-    {
-      "requirement_id": "1.5.2.1",
-      "mandatory": true,
-      "report_sections": [
-        "ch2_spatial_structure"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "总体用地结构"
-    },
-    {
-      "requirement_id": "1.5.2.2",
-      "mandatory": true,
-      "report_sections": [
-        "ch6_phasing"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "分期与时序"
-    },
-    {
-      "requirement_id": "1.5.2.3",
-      "mandatory": true,
-      "report_sections": [
-        "ch3_metrics_evidence"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "指标体系衔接"
-    },
-    {
-      "requirement_id": "1.5.2.4",
-      "mandatory": true,
-      "report_sections": [
-        "ch7_evidence"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "证据与来源"
-    },
-    {
-      "requirement_id": "1.5.2.5",
-      "mandatory": true,
-      "report_sections": [
-        "ch8_assumptions"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "假设清单"
-    },
-    {
-      "requirement_id": "1.5.3.required",
-      "mandatory": true,
-      "report_sections": [
-        "manifest"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "必交 JSON 文件完整性"
-    },
-    {
-      "requirement_id": "1.5.3.1",
-      "mandatory": true,
-      "report_sections": [
-        "manifest"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "必交几何与图形文件"
-    },
-    {
-      "requirement_id": "1.5.3.2",
-      "mandatory": true,
-      "report_sections": [
-        "visual/index.html"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "可交互可视化"
-    },
-    {
-      "requirement_id": "1.5.3.3",
-      "mandatory": true,
-      "report_sections": [
-        "self_check"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "自检脚本通过"
-    },
-    {
-      "requirement_id": "jingzhang-heritage-narrative",
-      "mandatory": true,
-      "report_sections": [
-        "ch1_overall_concept"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "总体概念 / 战略目标 / 跨区协同"
-    },
-    {
-      "requirement_id": "agent.2",
-      "mandatory": true,
-      "report_sections": [
-        "ch1_overall_concept (合并)"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "AI 产业生态 / 算力模型数据应用四层"
-    },
-    {
-      "requirement_id": "agent.3",
-      "mandatory": true,
-      "report_sections": [
-        "ch4_public_space (合并)"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "AI+ 十大场景 / 行业落地"
-    },
-    {
-      "requirement_id": "youth-friendly-public-space",
-      "mandatory": true,
-      "report_sections": [
-        "ch4_public_space"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "公共空间 + 地标"
-    },
-    {
-      "requirement_id": "ai-traffic-walkability",
-      "mandatory": true,
-      "report_sections": [
-        "ch5_cultural_narrative"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "文化叙事 / 节点场景"
-    },
-    {
-      "requirement_id": "agent.6",
-      "mandatory": true,
-      "report_sections": [
-        "ch6_phasing (合并)"
-      ],
-      "geojson_layers": [
-        "site_boundary",
-        "land_use"
-      ],
-      "metrics": [
-        "site_area_sqm"
-      ],
-      "drawings": [
-        "a3-booklet.pdf"
-      ],
-      "visual_sections": [
-        "map",
-        "metrics"
-      ],
-      "source_ids": [
-        "OFFICIAL-ANNOUNCEMENT",
-        "SITE-PACKAGE"
-      ],
-      "standard_ids": [
-        "PROJECT-OFFICIAL-ANNOUNCEMENT"
-      ],
-      "assumption_ids": [
-        "PROVISIONAL-BOUNDARY"
-      ],
-      "self_check_ids": [
-        "MANIFEST_SCHEMA_VALID"
-      ],
-      "title_zh": "全球活动 / 城市营销"
+        "SC-SPATIAL-003"
+      ]
     }
   ]
 }

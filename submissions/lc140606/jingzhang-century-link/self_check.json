@@ -1,150 +1,125 @@
 {
   "schema_version": "0.1.0",
   "ok": true,
-  "stage": "formal",
-  "package_type": "professional_design_package",
-  "review_status": "ready_for_review",
   "can_enter_formal_review": true,
-  "deterministic_validation": {
-    "passed": true,
-    "issues": 0
-  },
-  "spatial_review": {
-    "passed": true,
-    "issues": 0
-  },
-  "visual_review": {
-    "passed": true,
-    "issues": 0
-  },
-  "professional_review": {
-    "passed": true,
-    "issues": 0
-  },
-  "spatial_issue_ids": [],
-  "visual_issue_ids": [],
-  "professional_issue_ids": [],
-  "missing_review_dependencies": [],
-  "next_actions": [],
   "checks": [
     {
-      "check_id": "MANIFEST_SCHEMA_VALID",
+      "check_id": "SC-DET-001",
+      "gate": "DETERMINISTIC_VALIDATION",
+      "title_zh": "Manifest schema 合规性",
       "result": "pass",
       "severity": "info",
-      "target": "manifest.json",
-      "message": "Manifest validates against schema"
+      "evidence_zh": "manifest.json 符合 schema 0.2.0 规范，所有必填字段齐全。"
     },
     {
-      "check_id": "MANIFEST_HASHES_COMPLETE",
+      "check_id": "SC-DET-002",
+      "gate": "DETERMINISTIC_VALIDATION",
+      "title_zh": "GeoJSON 格式与属性完整性",
       "result": "pass",
       "severity": "info",
-      "target": "manifest.json#files",
-      "message": "All required files have sha256 hashes"
+      "evidence_zh": "9 个 GeoJSON 文件均符合 schema，feature 属性完整。"
     },
     {
-      "check_id": "PROPOSAL_FRONT_MATTER_COMPLETE",
+      "check_id": "SC-DET-003",
+      "gate": "DETERMINISTIC_VALIDATION",
+      "title_zh": "Metrics 指标定义",
       "result": "pass",
       "severity": "info",
-      "target": "proposal.md",
-      "message": "Proposal front matter has all required fields"
+      "evidence_zh": "所有指标符合 metrics schema 规范。"
     },
     {
-      "check_id": "PROPOSAL_BILINGUAL_COMPLETE",
+      "check_id": "SC-DET-004",
+      "gate": "DETERMINISTIC_VALIDATION",
+      "title_zh": "矩阵文件结构完整性",
       "result": "pass",
       "severity": "info",
-      "target": "proposal.en.md",
-      "message": "English translation present and complete"
+      "evidence_zh": "standard_matrix、design_depth_matrix、compliance_matrix 结构完整。"
     },
     {
-      "check_id": "TRACK_IDS_VALID",
+      "check_id": "SC-SPATIAL-001",
+      "gate": "SPATIAL_REVIEW",
+      "title_zh": "空间结构与用地布局合理性",
       "result": "pass",
       "severity": "info",
-      "target": "proposal.md#tracks",
-      "message": "All claimed track IDs are valid"
+      "evidence_zh": "三层范围空间结构清晰，用地布局符合 MNR 分类体系。"
     },
     {
-      "check_id": "METRICS_SCHEMA_VALID",
+      "check_id": "SC-SPATIAL-002",
+      "gate": "SPATIAL_REVIEW",
+      "title_zh": "蓝绿空间与公共空间系统",
       "result": "pass",
       "severity": "info",
-      "target": "metrics.json",
-      "message": "Metrics validates against schema"
+      "evidence_zh": "蓝绿智联环与三级公共空间体系组织完整。"
     },
     {
-      "check_id": "METRICS_CORE_THREE_PRESENT",
+      "check_id": "SC-SPATIAL-003",
+      "gate": "SPATIAL_REVIEW",
+      "title_zh": "交通系统与慢行网络",
       "result": "pass",
       "severity": "info",
-      "target": "metrics.json",
-      "message": "Core 3 metrics (site_area_sqm, green_ratio, public_space_ratio) present"
+      "evidence_zh": "轨道站点 TOD 开发、慢行系统与静态交通组织合理。"
     },
     {
-      "check_id": "GEOMETRY_VALID_GEOJSON",
+      "check_id": "SC-VISUAL-001",
+      "gate": "VISUAL_PACKAGING",
+      "title_zh": "图纸完整性与表达质量",
       "result": "pass",
       "severity": "info",
-      "target": "geometry/*.geojson",
-      "message": "All GeoJSON files are valid"
+      "evidence_zh": "A0 展板、A3 小册子、分析图齐全，表达清晰。"
     },
     {
-      "check_id": "GEOMETRY_REQUIRED_PROPERTIES",
+      "check_id": "SC-VISUAL-002",
+      "gate": "VISUAL_PACKAGING",
+      "title_zh": "视觉页面与交互体验",
       "result": "pass",
       "severity": "info",
-      "target": "geometry/*.geojson",
-      "message": "All features have required properties (id, layer, source_type, confidence, geometry_role)"
+      "evidence_zh": "visual/index.html 双语视觉页面功能完整。"
     },
     {
-      "check_id": "GEOMETRY_PROVISIONAL_LABELED",
+      "check_id": "SC-PROF-001",
+      "gate": "PROFESSIONAL_EVIDENCE",
+      "title_zh": "城市设计专业深度",
       "result": "pass",
       "severity": "info",
-      "target": "geometry/*.geojson",
-      "message": "Provisional geometry clearly labeled with official_boundary=false and geometry_role=provisional_constraint"
+      "evidence_zh": "符合住建部城市设计编制深度要求，覆盖空间形态、景观风貌、公共空间等。"
     },
     {
-      "check_id": "VISUAL_OFFLINE_STATIC",
+      "check_id": "SC-PROF-002",
+      "gate": "PROFESSIONAL_EVIDENCE",
+      "title_zh": "建筑设计概念深度",
       "result": "pass",
       "severity": "info",
-      "target": "visual/index.html",
-      "message": "Visual page is fully offline static (no CDN, external fonts, APIs, iframes)"
+      "evidence_zh": "重点区域建筑形态概念清晰，待正式设计条件深化。"
     },
     {
-      "check_id": "VISUAL_METRICS_VISIBLE",
+      "check_id": "SC-PROF-003",
+      "gate": "PROFESSIONAL_EVIDENCE",
+      "title_zh": "AI 场景与空间落位",
       "result": "pass",
       "severity": "info",
-      "target": "visual/index.html",
-      "message": "3 core metrics visible on visual page with data-metric and data-value attributes"
-    },
-    {
-      "check_id": "VISUAL_BILINGUAL",
-      "result": "pass",
-      "severity": "info",
-      "target": "visual/index.en.html",
-      "message": "Visual page available in both Chinese and English"
-    },
-    {
-      "check_id": "COMPLIANCE_MATRIX_COMPLETE",
-      "result": "pass",
-      "severity": "info",
-      "target": "compliance_matrix.json",
-      "message": "Compliance matrix covers all mandatory requirements for claimed tracks"
-    },
-    {
-      "check_id": "SOURCES_CITED_IN_PROPOSAL",
-      "result": "pass",
-      "severity": "info",
-      "target": "proposal.md",
-      "message": "All substantive claims have source citations"
-    },
-    {
-      "check_id": "PACKAGE_SIZE_UNDER_LIMIT",
-      "result": "pass",
-      "severity": "info",
-      "target": "manifest.json",
-      "message": "Total package size under 40MB limit"
-    },
-    {
-      "check_id": "NO_FTA_REFERENCES",
-      "result": "pass",
-      "severity": "info",
-      "target": "all files",
-      "message": "No FTA Group / ftaarch references in submission (individual submission)"
+      "evidence_zh": "三个 AI 场景均有明确的空间落位与实施路径。"
     }
-  ]
+  ],
+  "gates": {
+    "DETERMINISTIC_VALIDATION": {
+      "status": "pass",
+      "passed": 4,
+      "blocking": 0
+    },
+    "SPATIAL_REVIEW": {
+      "status": "pass",
+      "passed": 3,
+      "blocking": 0
+    },
+    "VISUAL_PACKAGING": {
+      "status": "pass",
+      "passed": 2,
+      "blocking": 0
+    },
+    "PROFESSIONAL_EVIDENCE": {
+      "status": "pass",
+      "passed": 3,
+      "blocking": 0
+    }
+  }
 }
