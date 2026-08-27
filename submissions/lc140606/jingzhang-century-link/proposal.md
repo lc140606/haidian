@@ -74,6 +74,9 @@ AI 原点社区定位"近校型成果转化与人才社区" [source:AGENT-TASKBO
 ### 市政与公共服务
 市政与公共服务以"市政走廊+公共服务节点"组织:市政走廊沿主轴与两翼敷设综合管廊、变电站、给水主干、雨水排涝、再生水与通信主干;公共服务节点结合三处重点区与社区中心布局 [depth:municipal_new_infrastructure]。具体容量与工程方案待官方市政资料确认 [depth:risk_missing_data]。
 ## 蓝绿空间、公共空间与城市风貌
+
+![蓝绿智联环与慢行系统结构图](assets/figures/mobility-bluegreen.png)
+
 蓝绿系统沿总体边界内侧组织"蓝绿智联环",串联京张遗址公园、清河与小月河滨水廊道、众智园花园型街区、AI 原点社区学院绿廊与大钟寺城市绿楔 [data:geometry/green_space.geojson#GREEN-001] 与 [data:geometry/public_space.geojson#PUBLIC-001]。公共空间以"主轴—环线—节点"三级组织:主轴即京张智联主轴,环线即蓝绿智联环,节点包括三处重点区中心广场与开源发布厅、智能体沙盒、AI 治理议事厅等 10+ 个 AI 场景节点 [metric:scenario_node_count]。
 风貌控制以"铁路棕灰+电感蓝+绿道绿"三色为基调,主轴沿线建筑高度协调(具体待控规补),立面语言参考工业遗产与学院建筑 [depth:height_massing_character]。**不预设建筑高度、强度等硬指标**。
 ## 更新项目清单、实施政策与分期计划

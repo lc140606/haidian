@@ -1,131 +1,499 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "0.1.0",
   "proposal_id": "lc140606_jingzhang-century-link",
-  "design_depth_matrix_version": "1.0",
-  "generated_by": "agent:lc140606:architect",
-  "generated_at": "2026-08-10T13:18:00+08:00",
-  "depth_baseline": "concept_proposal",
-  "depth_baseline_note": "本方案对应住建部《建筑工程设计文件编制深度规定（2016 年版）》中的'方案设计之前阶段 / 概念提案'，并按任务书要求标注'供专业团队进一步研究'。所有控制性指标（容积率、建筑高度、密度等）标记为后续深化项，不在本提案给出具体数值。",
+  "depth_level": "urban_design_formal",
   "items": [
     {
-      "depth_id": "D-01",
-      "depth_topic": "总体定位与发展目标",
-      "current_depth": "concept",
-      "current_deliverable": "ch1_overall_concept 中提出'百年京张 AI 创新带'核心理念、三阶段目标、跨区协同逻辑",
-      "next_depth_required": "战略规划 / 专项规划",
-      "evidence_refs": ["ch1_overall_concept", "source:AGENT-TASKBOOK"]
+      "item_id": "DEPTH-001",
+      "title_zh": "现状条件诊断",
+      "professional_dimension": "site_analysis",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "基于公开资料完成现状条件梳理，包括边界、用地、交通、历史资源等",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "现状条件分析"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "key_area_count"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "SITE-PACKAGE",
+        "BOUNDARY-SOURCE"
+      ],
+      "assumption_ids": [
+        "PROVISIONAL-BOUNDARY"
+      ],
+      "self_check_ids": [
+        "GEOMETRY_VALID_GEOJSON"
+      ]
     },
     {
-      "depth_id": "D-02",
-      "depth_topic": "空间结构与功能分区",
-      "current_depth": "concept",
-      "current_deliverable": "ch2 给出'一脉三芯六廊'结构骨架，三片区（AI 原点社区 / 众智园 / 大钟寺）联动关系",
-      "next_depth_required": "控规单元划分、用地性质落图",
-      "evidence_refs": ["ch2_spatial_structure", "geometry/land_use.geojson"]
+      "item_id": "DEPTH-002",
+      "title_zh": "三层范围工作框架",
+      "professional_dimension": "scope_framework",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "建立统筹研究—总体设计—重点区域三层递进框架",
+      "proposal_sections": [
+        "三层范围工作框架"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "assets/figures/site-overview.png"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson",
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "coordinated_research_area_sqm"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "PROVISIONAL-BOUNDARY"
+      ],
+      "self_check_ids": [
+        "MANIFEST_SCHEMA_VALID"
+      ]
     },
     {
-      "depth_id": "D-03",
-      "depth_topic": "土地利用",
-      "current_depth": "concept",
-      "current_deliverable": "提出主导功能比例（产业 / 居住 / 公共 / 蓝绿），未给定具体地块指标",
-      "next_depth_required": "分地块用地性质、容积率、建筑密度、绿地率",
-      "evidence_refs": ["ch2_spatial_structure", "metric:M-land-use-ratios"]
+      "item_id": "DEPTH-003",
+      "title_zh": "总体空间结构",
+      "professional_dimension": "spatial_structure",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "提出一轨三核两翼一环的总体空间结构",
+      "proposal_sections": [
+        "总体空间结构：一轨三核两翼一环"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "assets/figures/land-use-structure.png"
+      ],
+      "geometry_refs": [
+        "geometry/land_use.geojson",
+        "geometry/roads.geojson",
+        "geometry/green_space.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "green_ratio",
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "PROVISIONAL-BOUNDARY",
+        "CONCEPTUAL_LAND_USE"
+      ],
+      "self_check_ids": [
+        "GEOMETRY_REQUIRED_PROPERTIES"
+      ]
     },
     {
-      "depth_id": "D-04",
-      "depth_topic": "总体布局与总图",
-      "current_depth": "concept",
-      "current_deliverable": "geometry/ 下 7 个 GeoJSON 表达总体布局；figures/site-overview.png 总览",
-      "next_depth_required": "总平面图 1:2000、用地平衡表",
-      "evidence_refs": ["geometry/", "assets/figures/site-overview.png"]
+      "item_id": "DEPTH-004",
+      "title_zh": "用地功能布局",
+      "professional_dimension": "land_use",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "按控规深度组织用地结构，科研商业居住教育道路绿地完整覆盖",
+      "proposal_sections": [
+        "控规深度与待确认控制条件",
+        "用地功能布局"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "assets/figures/land-use-structure.png"
+      ],
+      "geometry_refs": [
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm",
+        "floor_area_ratio"
+      ],
+      "source_ids": [
+        "MNR-LU-CLASS",
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "PROVISIONAL-BOUNDARY",
+        "CONCEPTUAL_LAND_USE"
+      ],
+      "self_check_ids": [
+        "COMPLIANCE_MATRIX_COMPLETE"
+      ]
     },
     {
-      "depth_id": "D-05",
-      "depth_topic": "公共空间体系",
-      "current_depth": "concept",
-      "current_deliverable": "ch4 给出三级公共空间体系（地标节点 / 口袋公园 / 线性绿廊），含 3 门户 + 5 社区地标",
-      "next_depth_required": "节点详图、竖向设计、铺装与家具选型",
-      "evidence_refs": ["ch4_public_space", "geometry/public_space.geojson"]
+      "item_id": "DEPTH-005",
+      "title_zh": "三处重点区详细设计",
+      "professional_dimension": "key_area_design",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "众智园、AI原点社区、大钟寺三处重点区完成概念性详细设计",
+      "proposal_sections": [
+        "重点区域详细设计",
+        "众智园AI自主创新加速区",
+        "北京AI原点社区",
+        "大钟寺AI产业聚集区"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "assets/figures/key-areas.png"
+      ],
+      "geometry_refs": [
+        "geometry/key_areas.geojson",
+        "geometry/buildings.geojson"
+      ],
+      "metric_refs": [
+        "zhongzhiyuan_ai_acceleration_area_area_sqm",
+        "beijing_ai_origin_community_area_sqm",
+        "dazhongsi_ai_industry_cluster_area_sqm"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "KEY-AREA-SOURCE"
+      ],
+      "assumption_ids": [
+        "PROVISIONAL-BOUNDARY",
+        "CONCEPTUAL_BUILDING_HEIGHT"
+      ],
+      "self_check_ids": [
+        "GEOMETRY_PROVISIONAL_LABELED"
+      ]
     },
     {
-      "depth_id": "D-06",
-      "depth_topic": "慢行与蓝绿网络",
-      "current_depth": "concept",
-      "current_deliverable": "提出'一脉六廊'慢行骨架，整合南长河 / 小月河 / 昆玉河沿岸",
-      "next_depth_required": "慢行宽度标准、过街设施、驳岸设计",
-      "evidence_refs": ["ch4_public_space", "geometry/green_space.geojson", "geometry/roads.geojson"]
+      "item_id": "DEPTH-006",
+      "title_zh": "道路交通系统",
+      "professional_dimension": "transportation",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "构建轨道+慢行+机动车三级交通系统，强调步行优先",
+      "proposal_sections": [
+        "道路交通系统",
+        "慢行系统"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "assets/figures/mobility-bluegreen.png"
+      ],
+      "geometry_refs": [
+        "geometry/roads.geojson"
+      ],
+      "metric_refs": [
+        "road_length_m"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT",
+        "SITE-PACKAGE"
+      ],
+      "assumption_ids": [
+        "PROVISIONAL-BOUNDARY",
+        "CONCEPTUAL_ROAD_LAYOUT"
+      ],
+      "self_check_ids": [
+        "GEOMETRY_VALID_GEOJSON"
+      ]
     },
     {
-      "depth_id": "D-07",
-      "depth_topic": "天际线与高度",
-      "current_depth": "concept",
-      "current_deliverable": "提出'沿京张铁路线低—沿学院路高—三大门户点状隆起'天际线概念",
-      "next_depth_required": "分地块高度分区、城市设计导则图则",
-      "evidence_refs": ["ch2_spatial_structure", "assumption:A-CONTROLS-001"]
+      "item_id": "DEPTH-007",
+      "title_zh": "蓝绿空间系统",
+      "professional_dimension": "blue_green_system",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "蓝绿智联环串联公园绿地与滨水廊道",
+      "proposal_sections": [
+        "蓝绿空间系统",
+        "蓝绿智联环"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "assets/figures/mobility-bluegreen.png"
+      ],
+      "geometry_refs": [
+        "geometry/green_space.geojson",
+        "geometry/public_space.geojson"
+      ],
+      "metric_refs": [
+        "green_ratio",
+        "public_space_ratio"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "PROVISIONAL-BOUNDARY",
+        "CONCEPTUAL_GREEN_SPACE"
+      ],
+      "self_check_ids": [
+        "VISUAL_METRICS_VISIBLE"
+      ]
     },
     {
-      "depth_id": "D-08",
-      "depth_topic": "地下空间",
-      "current_depth": "not_addressed",
-      "current_deliverable": "本阶段未单独涉及，列入后续深化",
-      "next_depth_required": "地下空间分层、连通通道、人防工程",
-      "evidence_refs": ["assumption:A-MUNICIPAL-001"]
+      "item_id": "DEPTH-008",
+      "title_zh": "开发强度控制",
+      "professional_dimension": "development_intensity",
+      "required": true,
+      "status": "data_pending",
+      "evidence_summary_zh": "官方容积率、建筑高度等指标未公开，全部列为待补数据",
+      "proposal_sections": [
+        "控规深度与待确认控制条件"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "floor_area_ratio",
+        "building_height_m",
+        "total_floor_area_sqm"
+      ],
+      "source_ids": [
+        "SITE-PACKAGE"
+      ],
+      "assumption_ids": [
+        "UNKNOWN_FAR",
+        "UNKNOWN_BUILDING_HEIGHT"
+      ],
+      "self_check_ids": [
+        "METRICS_CORE_THREE_PRESENT"
+      ]
     },
     {
-      "depth_id": "D-09",
-      "depth_topic": "竖向与水文",
-      "current_depth": "not_addressed",
-      "current_deliverable": "本阶段未单独涉及，列入后续深化",
-      "next_depth_required": "竖向设计、海绵城市专项",
-      "evidence_refs": ["assumption:A-MUNICIPAL-001"]
+      "item_id": "DEPTH-009",
+      "title_zh": "城市更新策略",
+      "professional_dimension": "urban_renewal",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "建立保留—改造—新建—待确认四级更新方法框架",
+      "proposal_sections": [
+        "城市更新总体框架"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/buildings.geojson"
+      ],
+      "metric_refs": [
+        "building_count"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "PROVISIONAL_BOUNDARY",
+        "CONCEPTUAL_RENEWAL"
+      ],
+      "self_check_ids": [
+        "SOURCES_CITED_IN_PROPOSAL"
+      ]
     },
     {
-      "depth_id": "D-10",
-      "depth_topic": "市政与综合管线",
-      "current_depth": "not_addressed",
-      "current_deliverable": "本阶段未单独涉及",
-      "next_depth_required": "市政专项规划、综合管廊",
-      "evidence_refs": ["assumption:A-MUNICIPAL-001"]
+      "item_id": "DEPTH-010",
+      "title_zh": "风貌与景观引导",
+      "professional_dimension": "urban_design_character",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "铁路棕灰、电感蓝、绿道绿三色视觉系统",
+      "proposal_sections": [
+        "一带总体概念与命名体系",
+        "风貌引导"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "assets/figures/v2/svg/01-location-analysis.svg"
+      ],
+      "geometry_refs": [
+        "geometry/land_use.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK"
+      ],
+      "assumption_ids": [
+        "CONCEPTUAL_STREETSCAPE"
+      ],
+      "self_check_ids": [
+        "VISUAL_OFFLINE_STATIC"
+      ]
     },
     {
-      "depth_id": "D-11",
-      "depth_topic": "景观与种植",
-      "current_depth": "concept",
-      "current_deliverable": "ch4 给出'春华秋实·四季 AI'主题种植意向，5 大景观场景",
-      "next_depth_required": "种植设计详图、植物名录",
-      "evidence_refs": ["ch4_public_space"]
+      "item_id": "DEPTH-011",
+      "title_zh": "数据缺失风险声明",
+      "professional_dimension": "risk_disclosure",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "明确标注所有provisional数据的局限性，不把推测值写成审定指标",
+      "proposal_sections": [
+        "设计依据与资料清单",
+        "控规深度与待确认控制条件"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/site_boundary.geojson"
+      ],
+      "metric_refs": [
+        "site_area_sqm"
+      ],
+      "source_ids": [
+        "BOUNDARY-SOURCE",
+        "SITE-PACKAGE"
+      ],
+      "assumption_ids": [
+        "PROVISIONAL-BOUNDARY"
+      ],
+      "self_check_ids": [
+        "GEOMETRY_PROVISIONAL_LABELED"
+      ]
     },
     {
-      "depth_id": "D-12",
-      "depth_topic": "历史文化保护",
-      "current_depth": "concept",
-      "current_deliverable": "ch5 提出'京张 1909—2026—2049'三幕叙事、5 类文化场景",
-      "next_depth_required": "文物保护单位建档、历史风貌区划定",
-      "evidence_refs": ["ch5_cultural_narrative"]
+      "item_id": "DEPTH-012",
+      "title_zh": "AI创新生态策划",
+      "professional_dimension": "programming",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "五段创新链+五类用户画像+十张AI场景卡",
+      "proposal_sections": [
+        "AI创新生态、人才画像与AI+场景",
+        "五类用户画像",
+        "十张AI场景卡"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/key_areas.geojson"
+      ],
+      "metric_refs": [
+        "scenario_card_count",
+        "key_area_count"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK",
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "CONCEPTUAL_PROGRAMMING"
+      ],
+      "self_check_ids": [
+        "COMPLIANCE_MATRIX_COMPLETE"
+      ]
     },
     {
-      "depth_id": "D-13",
-      "depth_topic": "城市设计要素管控",
-      "current_depth": "concept",
-      "current_deliverable": "提出'建筑贴线率、底层开放率、地标可视域'3 项核心管控要素的概念",
-      "next_depth_required": "分图则、城市设计导则",
-      "evidence_refs": ["ch4_public_space", "assumption:A-CONTROLS-001"]
+      "item_id": "DEPTH-013",
+      "title_zh": "实施分期与策略",
+      "professional_dimension": "implementation",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "近中远三期实施策略，近期启动示范段",
+      "proposal_sections": [
+        "实施分期与策略建议"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry_refs": [
+        "geometry/phasing.geojson"
+      ],
+      "metric_refs": [
+        "phase_count"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "CONCEPTUAL_PHASING"
+      ],
+      "self_check_ids": [
+        "MANIFEST_HASHES_COMPLETE"
+      ]
     },
     {
-      "depth_id": "D-14",
-      "depth_topic": "分期建设与投资估算",
-      "current_depth": "concept",
-      "current_deliverable": "ch6 三阶段时序（2026—2030 / 2030—2040 / 2040—2049），无投资估算",
-      "next_depth_required": "分期实施计划、投融资方案",
-      "evidence_refs": ["ch6_phasing", "geometry/phasing.geojson"]
+      "item_id": "DEPTH-014",
+      "title_zh": "公共空间系统",
+      "professional_dimension": "public_space",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "三级公共空间体系：主轴公园—片区中心—社区口袋",
+      "proposal_sections": [
+        "公共空间系统",
+        "蓝绿智联环"
+      ],
+      "drawing_refs": [
+        "drawings/a3-booklet.pdf",
+        "assets/figures/mobility-bluegreen.png"
+      ],
+      "geometry_refs": [
+        "geometry/public_space.geojson",
+        "geometry/green_space.geojson"
+      ],
+      "metric_refs": [
+        "public_space_ratio",
+        "green_ratio"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "CONCEPTUAL_PUBLIC_SPACE"
+      ],
+      "self_check_ids": [
+        "METRICS_CORE_THREE_PRESENT"
+      ]
     },
     {
-      "depth_id": "D-15",
-      "depth_topic": "指标体系与可验证性",
-      "current_depth": "concept",
-      "current_deliverable": "13 项指标纳入 metrics.json，明确 status 字段（met / partial / unknown）",
-      "next_depth_required": "指标落地为可监测的城市运行指标",
-      "evidence_refs": ["metrics.json", "ch3_metrics_evidence"]
+      "item_id": "DEPTH-015",
+      "title_zh": "文化遗产保护与利用",
+      "professional_dimension": "heritage",
+      "required": true,
+      "status": "complete",
+      "evidence_summary_zh": "京张铁路遗址作为文化主轴，保护性利用而非开发",
+      "proposal_sections": [
+        "京张铁路文化走廊",
+        "文化叙事策略"
+      ],
+      "drawing_refs": [
+        "drawings/a0-boards.pdf",
+        "assets/figures/v2/intentions/ref-01-jingzhang-rail-1909.jpg"
+      ],
+      "geometry_refs": [
+        "geometry/constraints.geojson",
+        "geometry/roads.geojson"
+      ],
+      "metric_refs": [
+        "heritage_corridor_length_m"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "HERITAGE_PROTECTION_FIRST"
+      ],
+      "self_check_ids": [
+        "COMPLIANCE_MATRIX_COMPLETE"
+      ]
     }
   ]
 }

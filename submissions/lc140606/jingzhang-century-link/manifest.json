@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "package_id": "lc140606-jingzhang-century-link",
   "project_id": "centennial-jingzhang-ai-belt",
   "site_package_version": "2026.08",
@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "Doubao Seedream V4.5 + multi-modal planning"
   },
-  "generated_at": "2026-08-27T20:01:59.183413+08:00",
+  "generated_at": "2026-08-27T20:27:24.944390+08:00",
   "cover_image": "",
   "files": [
     {
@@ -141,7 +141,7 @@
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "97bf3a91ea2146496fd95c452ece56a84220e75453492c991d3641f9d04983c3"
+      "sha256": "0db1d2ba7054935475e49a5a33af088859e7592dfde3170395d56398d314dc78"
     },
     {
       "path": "drawings/a0-boards.pdf",
@@ -162,6 +162,12 @@
       "sha256": "4c34a8d000621504ecb818209fb0a589675fd3d575acf24b24996881479e5492"
     },
     {
+      "path": "geometry/constraints.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "363aa9ef62c165c56778c84ad6b08fdd1abf9f49d08b9275f4924836f7388a57"
+    },
+    {
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": false,
@@ -180,6 +186,12 @@
       "sha256": "33e099c28400b59e44017cca3cac5ccd3d34fa6afd47e86c74d45c410e245a65"
     },
     {
+      "path": "geometry/phasing.geojson",
+      "role": "geometry",
+      "required": true,
+      "sha256": "1347b3d64b7fdc025182c1b9c66ea4fe1b81ccf6287a69f99fa2963804aaac4d"
+    },
+    {
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": false,
@@ -189,7 +201,7 @@
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": false,
-      "sha256": "59d7db8d16c3eb32033cece54b12fd55ae4e53e9c0db3372417f55c2281aa983"
+      "sha256": "0526cf6cc429ec6bdcbb990e9fd47739b5433f811082814cc27b6c1bf7d884b9"
     },
     {
       "path": "geometry/site_boundary.geojson",
@@ -215,14 +227,22 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "b59b1a513c7f2845ee2045f58f2c6bb475c4b335d3bacc3b5db9c191e305c1c5",
-      "language": "zh"
+      "sha256": "18b2547417d708e9315cd454f4fbe9a7563663b6e17030523471ba73b22444ec",
+      "language": "zh",
+      "translation_file": "proposal.en.md"
+    },
+    {
+      "path": "report/copyright_statement.md",
+      "role": "copyright_statement",
+      "required": true,
+      "sha256": "b37da22c4ba029dcd50b1403316c38b741e363f9b6dafe8f0eed4ec3832beffb"
     },
     {
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": false,
-      "sha256": "3e14a6d68d8dd927ed0c8a60d335148758b2dbe81d758fc13046af7e2964ef20"
+      "sha256": "3e14a6d68d8dd927ed0c8a60d335148758b2dbe81d758fc13046af7e2964ef20",
+      "language": "zh"
     },
     {
       "path": "self_check.json",
@@ -240,7 +260,7 @@
       "path": "standard_matrix.json",
       "role": "standard_matrix",
       "required": true,
-      "sha256": "be6a5bf2f322fec5bb6af87841c29b1cdf2c5868de3eeef8d793988fac4535ac"
+      "sha256": "bfe5f96fc7c905d1f0b9d0550280ec1730970305b48f58b14923e16e38735dbb"
     },
     {
       "path": "visual/index.en.html",
@@ -255,32 +275,22 @@
       "role": "visualization",
       "required": true,
       "sha256": "aaaf1aea2fb8373386a67a4ec34ca088ed6b4d92ab9c703b45c84385f84c0e34",
-      "language": "zh"
+      "language": "zh",
+      "translation_file": "visual/index.en.html"
+    },
+    {
+      "path": "report/proposal.en.html",
+      "role": "proposal_full_text",
+      "language": "en",
+      "translation_of": "report/proposal.html",
+      "sha256": "684cedbd6a05c9881777461bb81ad8c624a3551fdc7517c577bf7503c38360ce"
     }
   ],
   "validation_claim": {
     "self_checked": true,
     "readiness_contract": "persisted-self-check-v1",
     "known_blockers": [],
-    "data_confidence": "mixed_provisional_and_conceptual",
-    "gates_passed": [
-      "deterministic_validation",
-      "spatial_review",
-      "visual_packaging",
-      "professional_evidence",
-      "push_preflight"
-    ],
-    "extensions": {
-      "x-tracks-claimed": {
-        "schema_version": "1.0",
-        "data": {
-          "tracks": [
-            "agent.1",
-            "agent.4",
-            "agent.5"
-          ]
-        }
-      }
-    }
-  }
+    "data_confidence": "mixed_provisional_and_conceptual"
+  },
+  "package_size_bytes": 5740628
 }
