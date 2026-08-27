@@ -8,16 +8,17 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路遗址为文化主轴,提出"一轨三核"的 AI 开源长廊空间结构:京张主脉串联众智园、北京 AI 原点社区与大钟寺三处重点区,北接高校策源,南接产业转化,东连蓝绿智联环。全部空间建议为概念方案,供专业团队深化研究。"
 tracks: ["jingzhang-heritage-narrative", "youth-friendly-public-space", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed"]
-iteration: "v2.0-formal"
-conformance_summary: "方案覆盖 agent.1 总体概念、agent.4 公共空间地标、agent.5 文化叙事三条赛道，所有空间建议为概念方案。"
+iteration: "v3.1-formal"
+conformance_summary: "方案覆盖京张文化遗产、青年友好公共空间、AI交通慢行三条赛道，所有空间建议为概念方案。"
 proposal_format_version: "2"
-bilingual_contract_version: "1"
 ---
 # 京张百年脉:一轨三核 AI 开源长廊
 ## 设计依据与资料清单
-本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张 AI 创新带城市设计国际方案征集资格预审公告》为第一依据 [source:OFFICIAL-ANNOUNCEMENT],并综合仓库整理的面向智能体任务书 [source:AGENT-TASKBOOK]、结构化任务包 [source:SITE-PACKAGE]、公开资料来源登记表 [source:SOURCE-REGISTRY]、处理资料包 [source:PROCESSED-FACT-PACK]、临时边界来源 [source:BOUNDARY-SOURCE] 与三处重点区来源 [source:KEY-AREA-SOURCE]。核心标准包括 [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]、[standard:MOHURD-URBAN-DESIGN-MEASURES]、[standard:MOHURD-CONTROL-DETAILED-PLANNING]、[standard:MNR-LAND-USE-CLASSIFICATION-GUIDE] 与 [standard:MOHURD-ARCH-DESIGN-DEPTH-2016];成果深度由 [depth:existing_conditions_diagnosis]、[depth:three_level_scope_framework]、[depth:overall_spatial_structure] 等 15 个深度项约束。
-截至公开资料复核日期,官方精确 polygon 与 CAD 红线未公开。仓库以 `brief/site-package/geometry/provisional_boundaries.geojson` 提供临时粗略边界 [source:BOUNDARY-SOURCE]。本方案因此使用 provisional 边界,并在正文、HTML、来源、假设与自检中持续标注:临时边界只能用于生成、展示与讨论,不能作为官方红线、审批依据或精确面积依据;组织方数据缺口不阻断内容评分 [depth:risk_missing_data]。
-资料使用边界来自 `data/source_registry.json` [source:SOURCE-REGISTRY]:formal 权威结论只能来自 `usable_for_formal="yes"` 的来源;背景资料仅支撑机制与叙事;provisional 资料仅支撑生成与讨论。本方案没有使用非公开数据、个人隐私数据或未经授权素材;所有面积、比例、图层数量与里程均可从 `geometry/*.geojson` 与 `metrics.json` 复算 [metric:site_area_sqm]。
+本方案以北京市规划和自然资源委员会海淀分局发布的《百年京张 AI 创新带城市设计国际方案征集资格预审公告》为核心依据 [source:OFFICIAL-ANNOUNCEMENT],并结合智能体任务书与结构化任务包开展工作 [source:AGENT-TASKBOOK]。设计标准参照住建部城市设计与控规编制办法执行 [standard:MOHURD-URBAN-DESIGN-MEASURES]。
+
+截至公开资料复核日期,官方精确 polygon 与 CAD 红线未公开。本方案全部使用 provisional 边界开展概念设计,空间形态、面积与指标均为方案层面的推演,不能作为官方红线、审批依据或精确面积依据 [depth:risk_missing_data]。所有面积指标均可从提交包内 GeoJSON 与 metrics.json 复算 [metric:site_area_sqm]。
+
+资料使用遵循提交包内的来源登记机制:formal 结论仅基于权威公开来源,provisional 资料仅用于生成与讨论。本方案未使用非公开数据、个人隐私数据或未经授权素材。
 ![资料证据链与提交包关系图](assets/figures/site-overview.png)
 ## 三层范围工作框架
 公告确定三个工作层次 [source:OFFICIAL-ANNOUNCEMENT]:统筹研究范围约 43.6 平方公里,总体设计范围约 11.4 平方公里,重点区域范围约 368.4 公顷。方案据此建立"战略层—总体层—重点层"递进框架:战略层回答 AI 创新生态与未来城市形态;总体层把战略落实为用地、交通、蓝绿、风貌与更新项目;重点层对众智园、AI 原点社区、大钟寺开展详细设计 [depth:three_level_scope_framework]。
@@ -26,7 +27,7 @@ bilingual_contract_version: "1"
 | 统筹研究范围 | 43.6 km² | AI 创新生态如何组织 | 高校策源—开源协作—企业转化—公共体验—国际传播五段创新链 | [data:geometry/site_boundary.geojson#SITE-001] |
 | 总体设计范围 | 11.4 km² | 产业、空间、交通、市政如何落图 | 一轨三核蓝绿环;用地完整分区、道路与蓝绿廊 | [data:geometry/land_use.geojson#LU-001] |
 | 重点区域范围 | 368.4 ha | 三处片区如何达到详细设计深度 | 三核定位、空间动作、场景与实施依赖 | [data:geometry/key_areas.geojson#PROV-KEY-001] |
-三层范围的面积与计数复算证据为 [metric:site_area_sqm]、[metric:key_area_count]、[metric:zhongzhiyuan_ai_acceleration_area_area_sqm]、[metric:beijing_ai_origin_community_area_sqm] 与 [metric:dazhongsi_ai_industry_cluster_area_sqm]。
+三层范围的面积与计数复算详见指标体系章节,核心指标包括总用地面积与重点区数量等 [metric:site_area_sqm]。
 ![三层范围与空间工作框架图](assets/figures/land-use-structure.png)
 ## 统筹研究范围产业与未来城市研究
 ### 一带总体概念与命名体系
@@ -76,8 +77,9 @@ AI 原点社区定位"近校型成果转化与人才社区" [source:AGENT-TASKBO
 
 ![蓝绿智联环与慢行系统结构图](assets/figures/mobility-bluegreen.png)
 
-蓝绿系统沿总体边界内侧组织"蓝绿智联环",串联京张遗址公园、清河与小月河滨水廊道、众智园花园型街区、AI 原点社区学院绿廊与大钟寺城市绿楔 [data:geometry/green_space.geojson#GREEN-001] 与 [data:geometry/public_space.geojson#PUBLIC-001]。公共空间以"主轴—环线—节点"三级组织:主轴即京张智联主轴,环线即蓝绿智联环,节点包括三处重点区中心广场与开源发布厅、智能体沙盒、AI 治理议事厅等 10+ 个 AI 场景节点 [metric:scenario_node_count]。
-风貌控制以"铁路棕灰+电感蓝+绿道绿"三色为基调,主轴沿线建筑高度协调(具体待控规补),立面语言参考工业遗产与学院建筑 [depth:height_massing_character]。**不预设建筑高度、强度等硬指标**。
+蓝绿系统沿总体边界内侧组织"蓝绿智联环",串联京张遗址公园、清河与小月河滨水廊道、众智园花园型街区、AI 原点社区学院绿廊与大钟寺城市绿楔 [data:geometry/green_space.geojson#GREEN-001]。公共空间以"主轴—环线—节点"三级组织,节点包括开源发布厅、智能体沙盒、AI 治理议事厅等 10+ 个 AI 场景节点 [metric:scenario_node_count]。
+
+风貌控制以"铁路棕灰+电感蓝+绿道绿"三色为基调,主轴沿线建筑高度协调,立面语言参考工业遗产与学院建筑 [depth:height_massing_character]。**不预设建筑高度、强度等硬指标,待正式控规条件发布后复核**。
 ## 更新项目清单、实施政策与分期计划
 ### 概念更新项目(8 项)
 | 编号 | 项目名 | 位置 | 性质 | 依赖 |

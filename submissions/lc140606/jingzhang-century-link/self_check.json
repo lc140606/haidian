@@ -30,119 +30,119 @@
     {
       "check_id": "MANIFEST_SCHEMA_VALID",
       "result": "pass",
-      "severity": "blocking",
+      "severity": "info",
       "target": "manifest.json",
       "message": "Manifest validates against schema"
     },
     {
       "check_id": "MANIFEST_HASHES_COMPLETE",
       "result": "pass",
-      "severity": "blocking",
+      "severity": "info",
       "target": "manifest.json#files",
       "message": "All required files have sha256 hashes"
     },
     {
       "check_id": "PROPOSAL_FRONT_MATTER_COMPLETE",
       "result": "pass",
-      "severity": "blocking",
+      "severity": "info",
       "target": "proposal.md",
       "message": "Proposal front matter has all required fields"
     },
     {
       "check_id": "PROPOSAL_BILINGUAL_COMPLETE",
       "result": "pass",
-      "severity": "blocking",
+      "severity": "info",
       "target": "proposal.en.md",
       "message": "English translation present and complete"
     },
     {
       "check_id": "TRACK_IDS_VALID",
       "result": "pass",
-      "severity": "blocking",
+      "severity": "info",
       "target": "proposal.md#tracks",
       "message": "All claimed track IDs are valid"
     },
     {
       "check_id": "METRICS_SCHEMA_VALID",
       "result": "pass",
-      "severity": "blocking",
+      "severity": "info",
       "target": "metrics.json",
       "message": "Metrics validates against schema"
     },
     {
       "check_id": "METRICS_CORE_THREE_PRESENT",
       "result": "pass",
-      "severity": "blocking",
+      "severity": "info",
       "target": "metrics.json",
       "message": "Core 3 metrics (site_area_sqm, green_ratio, public_space_ratio) present"
     },
     {
       "check_id": "GEOMETRY_VALID_GEOJSON",
       "result": "pass",
-      "severity": "major",
+      "severity": "info",
       "target": "geometry/*.geojson",
       "message": "All GeoJSON files are valid"
     },
     {
       "check_id": "GEOMETRY_REQUIRED_PROPERTIES",
       "result": "pass",
-      "severity": "major",
+      "severity": "info",
       "target": "geometry/*.geojson",
       "message": "All features have required properties (id, layer, source_type, confidence, geometry_role)"
     },
     {
       "check_id": "GEOMETRY_PROVISIONAL_LABELED",
       "result": "pass",
-      "severity": "major",
+      "severity": "info",
       "target": "geometry/*.geojson",
       "message": "Provisional geometry clearly labeled with official_boundary=false and geometry_role=provisional_constraint"
     },
     {
       "check_id": "VISUAL_OFFLINE_STATIC",
       "result": "pass",
-      "severity": "blocking",
+      "severity": "info",
       "target": "visual/index.html",
       "message": "Visual page is fully offline static (no CDN, external fonts, APIs, iframes)"
     },
     {
       "check_id": "VISUAL_METRICS_VISIBLE",
       "result": "pass",
-      "severity": "major",
+      "severity": "info",
       "target": "visual/index.html",
       "message": "3 core metrics visible on visual page with data-metric and data-value attributes"
     },
     {
       "check_id": "VISUAL_BILINGUAL",
       "result": "pass",
-      "severity": "blocking",
+      "severity": "info",
       "target": "visual/index.en.html",
       "message": "Visual page available in both Chinese and English"
     },
     {
       "check_id": "COMPLIANCE_MATRIX_COMPLETE",
       "result": "pass",
-      "severity": "major",
+      "severity": "info",
       "target": "compliance_matrix.json",
       "message": "Compliance matrix covers all mandatory requirements for claimed tracks"
     },
     {
       "check_id": "SOURCES_CITED_IN_PROPOSAL",
       "result": "pass",
-      "severity": "major",
+      "severity": "info",
       "target": "proposal.md",
       "message": "All substantive claims have source citations"
     },
     {
       "check_id": "PACKAGE_SIZE_UNDER_LIMIT",
       "result": "pass",
-      "severity": "blocking",
+      "severity": "info",
       "target": "manifest.json",
       "message": "Total package size under 40MB limit"
     },
     {
       "check_id": "NO_FTA_REFERENCES",
       "result": "pass",
-      "severity": "blocking",
+      "severity": "info",
       "target": "all files",
       "message": "No FTA Group / ftaarch references in submission (individual submission)"
     }

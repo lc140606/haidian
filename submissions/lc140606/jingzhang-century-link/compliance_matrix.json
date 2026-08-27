@@ -8,6 +8,75 @@
   ],
   "requirements": [
     {
+      "requirement_id": "REQ-OFFICIAL-ANNOUNCEMENT",
+      "mandatory": true,
+      "report_sections": [
+        "设计依据与资料清单",
+        "三层范围工作框架"
+      ],
+      "geojson_layers": [
+        "site_boundary",
+        "land_use",
+        "key_areas"
+      ],
+      "metrics": [
+        "site_area_sqm",
+        "key_area_count"
+      ],
+      "drawings": [
+        "drawings/a0-boards.pdf"
+      ],
+      "visual_sections": [
+        "overview"
+      ],
+      "source_ids": [
+        "OFFICIAL-ANNOUNCEMENT"
+      ],
+      "standard_ids": [
+        "PROJECT-OFFICIAL-ANNOUNCEMENT"
+      ],
+      "assumption_ids": [
+        "ASSUMP-BOUNDARY-PROVISIONAL"
+      ],
+      "self_check_ids": [
+        "SC-DET-001"
+      ]
+    },
+    {
+      "requirement_id": "REQ-AGENT-TASKBOOK",
+      "mandatory": true,
+      "report_sections": [
+        "AI 创新生态、人才画像与 AI+ 场景",
+        "重点区域详细设计"
+      ],
+      "geojson_layers": [
+        "key_areas",
+        "public_space"
+      ],
+      "metrics": [
+        "scenario_card_count",
+        "scenario_node_count"
+      ],
+      "drawings": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "visual_sections": [
+        "scenarios"
+      ],
+      "source_ids": [
+        "AGENT-TASKBOOK"
+      ],
+      "standard_ids": [
+        "MOHURD-URBAN-DESIGN-MEASURES"
+      ],
+      "assumption_ids": [
+        "ASSUMP-SCENARIO-CONCEPT"
+      ],
+      "self_check_ids": [
+        "SC-PROF-003"
+      ]
+    },
+    {
       "requirement_id": "1.3.1",
       "mandatory": true,
       "report_sections": [

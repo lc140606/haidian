@@ -9,10 +9,9 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "Using the century-old Jing-Zhang railway as the cultural spine, this proposal presents the 'One-Rail-Three-Cores' AI open corridor: the Jing-Zhang main axis links the three key areas (Zhongzhiyuan AI Acceleration Park, Beijing AI Origin Community, Dazhongsi AI Industry Cluster), connecting university knowledge sources in the north with industry translation in the south, and a blue-green smart ring in the east. All spatial suggestions are conceptual proposals for further study by professional teams."
 tracks: ["jingzhang-heritage-narrative", "youth-friendly-public-space", "ai-traffic-walkability"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "robot-delivery-low-speed"]
-iteration: "v2.0-formal"
-conformance_summary: "Proposal covers agent.1 overall concept, agent.4 public space landmarks, and agent.5 cultural narrative tracks. All spatial proposals are conceptual."
+iteration: "v3.1-formal"
+conformance_summary: "Proposal covers jingzhang-heritage-narrative overall concept, youth-friendly-public-space public space landmarks, and ai-traffic-walkability cultural narrative tracks. All spatial proposals are conceptual."
 proposal_format_version: "2"
-bilingual_contract_version: "1"
 ---
 
 # Jing-Zhang Century Link: One-Rail-Three-Cores AI Open Corridor
@@ -63,7 +62,7 @@ Eight conceptual renewal projects (U-01 to U-08) cover the main axis phase 1, bl
 
 ## Metrics, Area Recalculation, and Compliance Matrix
 
-Core metrics are tracked in `metrics.json` and listed in the proposal with status (known/provisional/unknown). Provisional boundaries in [data:geometry/site_boundary.geojson#SITE-001] are explicitly marked; replacement with official polygons requires recalculation of all area metrics and drawings [depth:metrics_recalculation]. Compliance matrix maps all 1.3.x, 1.4.x, 1.5.x and agent.1-agent.6 requirements to proposal sections, GeoJSON layers, metrics, drawings, HTML pages, sources, assumptions, and self-check items.
+Core metrics are tracked in `metrics.json` and listed in the proposal with status (known/provisional/unknown). Provisional boundaries in [data:geometry/site_boundary.geojson#SITE-001] are explicitly marked; replacement with official polygons requires recalculation of all area metrics and drawings [depth:metrics_recalculation]. Compliance matrix maps all 1.3.x, 1.4.x, 1.5.x and jingzhang-heritage-narrative-agent.6 requirements to proposal sections, GeoJSON layers, metrics, drawings, HTML pages, sources, assumptions, and self-check items.
 
 ## Risk, Copyright, and Compliance
 
