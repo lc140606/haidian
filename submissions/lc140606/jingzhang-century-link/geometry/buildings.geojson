@@ -9,7 +9,7 @@
     "coordinate_reference_system": "EPSG:4326",
     "official_boundary_available": false,
     "boundary_status": "maintainer_defined_provisional",
-    "layer": "BUILDING",
+    "layer": "BUILDING_FOOTPRINT",
     "scope_note": "概念示意，所有高度为示意值，不构成控制指标"
   },
   "features": [
@@ -31,8 +31,8 @@
         "coordinate_reference_system": "EPSG:4326",
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
-        "layer": "BUILDING",
-        "source_type": "provisional_boundary",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "official_boundary": false
@@ -64,8 +64,8 @@
         "coordinate_reference_system": "EPSG:4326",
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
-        "layer": "BUILDING",
-        "source_type": "provisional_boundary",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "official_boundary": false
@@ -97,8 +97,8 @@
         "coordinate_reference_system": "EPSG:4326",
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
-        "layer": "BUILDING",
-        "source_type": "provisional_boundary",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "official_boundary": false
@@ -130,8 +130,8 @@
         "coordinate_reference_system": "EPSG:4326",
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
-        "layer": "BUILDING",
-        "source_type": "provisional_boundary",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "official_boundary": false
@@ -163,8 +163,8 @@
         "coordinate_reference_system": "EPSG:4326",
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
-        "layer": "BUILDING",
-        "source_type": "provisional_boundary",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "official_boundary": false
@@ -196,8 +196,8 @@
         "coordinate_reference_system": "EPSG:4326",
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
-        "layer": "BUILDING",
-        "source_type": "provisional_boundary",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "official_boundary": false
@@ -229,8 +229,8 @@
         "coordinate_reference_system": "EPSG:4326",
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
-        "layer": "BUILDING",
-        "source_type": "provisional_boundary",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "official_boundary": false
@@ -262,8 +262,8 @@
         "coordinate_reference_system": "EPSG:4326",
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
-        "layer": "BUILDING",
-        "source_type": "provisional_boundary",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "official_boundary": false
@@ -295,8 +295,8 @@
         "coordinate_reference_system": "EPSG:4326",
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
-        "layer": "BUILDING",
-        "source_type": "provisional_boundary",
+        "layer": "BUILDING_FOOTPRINT",
+        "source_type": "agent_generated_design",
         "confidence": "medium",
         "geometry_role": "provisional_constraint",
         "official_boundary": false
