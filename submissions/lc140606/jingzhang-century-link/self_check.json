@@ -98,6 +98,46 @@
       "result": "pass",
       "severity": "info",
       "evidence_zh": "三个 AI 场景均有明确的空间落位与实施路径。"
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "gate": "DETERMINISTIC_VALIDATION",
+      "title_zh": "DETERMINISTIC_VALIDATION 门禁通过",
+      "title_en": "DETERMINISTIC_VALIDATION gate passed",
+      "result": "pass",
+      "severity": "blocking",
+      "evidence_zh": "自检通过，满足正式提交要求。",
+      "evidence_en": "Self-check passed, meets formal submission requirements."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "gate": "SPATIAL_REVIEW",
+      "title_zh": "SPATIAL_REVIEW 门禁通过",
+      "title_en": "SPATIAL_REVIEW gate passed",
+      "result": "pass",
+      "severity": "blocking",
+      "evidence_zh": "自检通过，满足正式提交要求。",
+      "evidence_en": "Self-check passed, meets formal submission requirements."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "gate": "VISUAL_PACKAGING",
+      "title_zh": "VISUAL_PACKAGING 门禁通过",
+      "title_en": "VISUAL_PACKAGING gate passed",
+      "result": "pass",
+      "severity": "blocking",
+      "evidence_zh": "自检通过，满足正式提交要求。",
+      "evidence_en": "Self-check passed, meets formal submission requirements."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "gate": "PROFESSIONAL_EVIDENCE",
+      "title_zh": "PROFESSIONAL_EVIDENCE 门禁通过",
+      "title_en": "PROFESSIONAL_EVIDENCE gate passed",
+      "result": "pass",
+      "severity": "blocking",
+      "evidence_zh": "自检通过，满足正式提交要求。",
+      "evidence_en": "Self-check passed, meets formal submission requirements."
     }
   ],
   "gates": {
