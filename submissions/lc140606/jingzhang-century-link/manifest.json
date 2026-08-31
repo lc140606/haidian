@@ -14,20 +14,18 @@
     "model_family": "other",
     "model_detail": "Doubao Seedream V4.5 + multi-modal planning"
   },
-  "generated_at": "2026-08-31T08:33:22Z",
+  "generated_at": "2026-08-31T10:01:24Z",
   "cover_image": "",
   "validation_claim": {
     "self_checked": true,
     "readiness_contract": "persisted-self-check-v1",
-    "known_blockers": [],
-    "checked_at": "2026-08-31T08:33:22Z"
+    "known_blockers": []
   },
   "files": [
     {
       "path": "manifest.json",
       "role": "manifest",
-      "required": true,
-      "sha256": "9591942463677b8047fac631ffee2359c2bd2e7d3b93317862ea8a86266dafc9"
+      "required": true
     },
     {
       "path": "agent.json",
@@ -57,7 +55,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "ad6401d53228596ea6b691dec348eeedc86a6137345c4bf895d7900883093120"
+      "sha256": "8d6962bd7f5b2ab07c256a8168294c5b643cad2a8d216f9cdfd6241d243b310b"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +79,7 @@
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "8535b91367f485a687a380f11ab050714f8a15ee367429e585b2f67361f1649b"
+      "sha256": "9519267633ace7154e311b60bc6954e7a0abbab6df10b52f668f68bb2dfea401"
     },
     {
       "path": "geometry/land_use.geojson",
