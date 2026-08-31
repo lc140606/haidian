@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "Doubao Seedream V4.5 + multi-modal planning"
   },
-  "generated_at": "2026-08-27T20:27:24.944390+08:00",
+  "generated_at": "2026-08-31T16:16:24.634652+08:00",
   "cover_image": "",
   "validation_claim": {
     "self_checked": true,
@@ -26,13 +26,13 @@
       "path": "manifest.json",
       "role": "manifest",
       "required": true,
-      "sha256": null
+      "sha256": "9591942463677b8047fac631ffee2359c2bd2e7d3b93317862ea8a86266dafc9"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "a3718757228c3538283d5b3aa673f2155224e1e11842306bd31999b74e5d4a11"
+      "sha256": "ed1b720e864f403c5e9dff50a44a2507ce22a737682816344ca895721e1226df"
     },
     {
       "path": "metrics.json",
@@ -50,19 +50,19 @@
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "3b7540589b5d43be18b7d738233eb3a77fbe591809cb16150afc5a613503a52b"
+      "sha256": "e4628a7b0b9795e9a65de61a56bb8261329abb94304db3bfdbee134f0fd4c205"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "2fe5838f58f05e9dcdf120ca07e259b36fd9e14653e0ccba8530a133a81777e5"
+      "sha256": "ad6401d53228596ea6b691dec348eeedc86a6137345c4bf895d7900883093120"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "8190cf7f25bfbfbe049bac33190bce00fe537e33726f4339a6598079e59f6da4"
+      "sha256": "25f0b78181163adad40bcbccebb21b8f4d6c5104adf879592cd9311a57c21bc1"
     },
     {
       "path": "standard_matrix.json",
@@ -80,55 +80,55 @@
       "path": "geometry/site_boundary.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "431389fc8830a69518abde633a07e02994461c0fc1f171feee07d52469c0e19c"
+      "sha256": "8535b91367f485a687a380f11ab050714f8a15ee367429e585b2f67361f1649b"
     },
     {
       "path": "geometry/land_use.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "43be2c518942483418006b47e317f9b3a72b91851d8c92edf1aebc7accec818d"
+      "sha256": "87c6fb3a5cdcaa6f132af71eadbaf5975583fa4cded8f648a590581a17f8e541"
     },
     {
       "path": "geometry/buildings.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "dd1d5426ad503158750137838dbe213311e531020af4a3ea8c85b6c4b0d15dd0"
+      "sha256": "90484592461b73f24a80c7630f306bc73ceef0f0a615b908746131d4d044700a"
     },
     {
       "path": "geometry/roads.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "035e8fa471e97bd489f788e7f6222a26962849f715f50163f5206f2b89f14fe6"
+      "sha256": "12ac537b91fb89a6322fe983966a24d4b35910cc1f9f1a09ab350cc504ce6d12"
     },
     {
       "path": "geometry/green_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "9ac7a4ad34b5ce6e1411dd23d8aa9a5728d29ce21de00a5e724dbb196a9f22b2"
+      "sha256": "fdb04975c042ed6dd8b6da2ac2df2cc97232b89c839f49d890ef0ea18c9a6cae"
     },
     {
       "path": "geometry/public_space.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "98f86deeb545cf21bf3e4bc601090d4fd12f26b11dc41f799af11fb3a1a05630"
+      "sha256": "bc22473b70b5e67c65c9533c046b8b95c20ec65f79b719ce94edc661368631bd"
     },
     {
       "path": "geometry/key_areas.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "bd507a40f133eb50f027203df6fc834c98d1d69fbb067acfd7d7b89caaa0d1e8"
+      "sha256": "fcf0576f39823e9b48d9be48600d6b7e8e99a55d6015cb8a49d87a9f637a2a48"
     },
     {
       "path": "geometry/constraints.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "e301b6a7fa22c979a5893e32aed4b99d0f0527500ad1ee737557dbcc745b6461"
+      "sha256": "4ab90641160f50e80dba0ef7e917b64de6fc091302a401af2c96ec71b4fa937f"
     },
     {
       "path": "geometry/phasing.geojson",
       "role": "geometry",
       "required": true,
-      "sha256": "ba31af73302538606a9cdf370dee6bbe1f608f5704a308561761a8169ea776aa"
+      "sha256": "5ba4e37cef52186e09c6c9968ae0bdcc9fa4d7e2dee0a9e59629c11bb2b3d78c"
     },
     {
       "path": "drawings/a0-boards.pdf",
