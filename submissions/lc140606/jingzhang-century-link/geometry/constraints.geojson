@@ -9,7 +9,7 @@
     "coordinate_reference_system": "EPSG:4326",
     "official_boundary_available": false,
     "boundary_status": "maintainer_defined_provisional",
-    "layer": "CONSTRAINTS",
+    "layer": "REGULATORY_CONTROL",
     "scope_note": "概念性约束条件，不含精确红线"
   },
   "features": [
@@ -17,12 +17,12 @@
       "type": "Feature",
       "properties": {
         "id": "CON-001",
-        "layer": "CONSTRAINTS",
+        "layer": "REGULATORY_CONTROL",
         "constraint_type": "heritage_protection",
         "constraint_name_zh": "京张铁路遗址保护带",
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
-        "source_type": "provisional_boundary",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "low",
         "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       },
@@ -61,12 +61,12 @@
       "type": "Feature",
       "properties": {
         "id": "CON-002",
-        "layer": "CONSTRAINTS",
+        "layer": "REGULATORY_CONTROL",
         "constraint_type": "water_system",
         "constraint_name_zh": "南长河",
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
-        "source_type": "provisional_boundary",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "low",
         "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       },
@@ -101,12 +101,12 @@
       "type": "Feature",
       "properties": {
         "id": "CON-003",
-        "layer": "CONSTRAINTS",
+        "layer": "REGULATORY_CONTROL",
         "constraint_type": "height_control",
         "constraint_name_zh": "限高区（概念）",
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
-        "source_type": "provisional_boundary",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "low",
         "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       },
