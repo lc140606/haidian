@@ -14,12 +14,13 @@
     "model_family": "other",
     "model_detail": "Doubao Seedream V4.5 + multi-modal planning"
   },
-  "generated_at": "2026-08-31T16:16:24.634652+08:00",
+  "generated_at": "2026-08-31T08:33:22Z",
   "cover_image": "",
   "validation_claim": {
     "self_checked": true,
     "readiness_contract": "persisted-self-check-v1",
-    "known_blockers": []
+    "known_blockers": [],
+    "checked_at": "2026-08-31T08:33:22Z"
   },
   "files": [
     {
