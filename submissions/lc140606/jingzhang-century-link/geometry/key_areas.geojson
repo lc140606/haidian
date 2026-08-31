@@ -40,7 +40,7 @@
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
         "layer": "KEY_AREA",
-        "source_type": "provisional_boundary",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "low"
       },
       "geometry": {
@@ -97,7 +97,7 @@
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
         "layer": "KEY_AREA",
-        "source_type": "provisional_boundary",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "low"
       },
       "geometry": {
@@ -154,7 +154,7 @@
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
         "layer": "KEY_AREA",
-        "source_type": "provisional_boundary",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "low"
       },
       "geometry": {
