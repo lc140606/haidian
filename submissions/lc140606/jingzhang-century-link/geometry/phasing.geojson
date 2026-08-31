@@ -5,7 +5,7 @@
     "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605",
     "coordinate_reference_system": "EPSG:4326",
     "official_boundary_available": false,
-    "layer": "PHASING",
+    "layer": "PHASE",
     "scope_note": "概念性分期示意，不构成实施承诺"
   },
   "features": [
@@ -13,12 +13,12 @@
       "type": "Feature",
       "properties": {
         "id": "PHASE-001",
-        "layer": "PHASING",
+        "layer": "PHASE",
         "phase": "near_term",
         "phase_name_zh": "近期（启动示范段）",
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
-        "source_type": "provisional_boundary",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       },
@@ -55,12 +55,12 @@
       "type": "Feature",
       "properties": {
         "id": "PHASE-002",
-        "layer": "PHASING",
+        "layer": "PHASE",
         "phase": "mid_term",
         "phase_name_zh": "中期（三核联动）",
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
-        "source_type": "provisional_boundary",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       },
@@ -97,12 +97,12 @@
       "type": "Feature",
       "properties": {
         "id": "PHASE-003",
-        "layer": "PHASING",
+        "layer": "PHASE",
         "phase": "long_term",
         "phase_name_zh": "远期（全域贯通）",
         "geometry_role": "provisional_constraint",
         "official_boundary": false,
-        "source_type": "provisional_boundary",
+        "source_type": "agent_generated_design",
         "confidence": "low",
         "source_id": "DATA-SRC-PROVISIONAL-BOUNDARIES-20260605"
       },
