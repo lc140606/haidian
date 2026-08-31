@@ -30,7 +30,7 @@
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
         "layer": "SITE_BOUNDARY",
-        "source_type": "official_public",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "high"
       },
       "geometry": {
@@ -95,7 +95,7 @@
         "official_boundary_available": false,
         "boundary_status": "maintainer_defined_provisional",
         "layer": "SITE_BOUNDARY",
-        "source_type": "official_public",
+        "source_type": "agent_inferred_from_public_data",
         "confidence": "high"
       },
       "geometry": {
